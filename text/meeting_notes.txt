@@ -1,0 +1,5 @@
+11/2/2016 Meeting Notes:
+
+	- word embedding
+		- methods are documents
+		- callees are words in a document
