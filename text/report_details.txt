@@ -1,0 +1,2 @@
+Technical Challenges:
+    - due to the large size of the model trained upon the wikipedia corpus, we had trouble loading the model into memory
