@@ -37,7 +37,8 @@ def create_documents(mappings, nodes):
     for key in nodes.keys():
         documents[mappings[key]] = []
         for val in nodes[key]:
-            documents[mappings[key]].append(mappings[val[:-1]])
+            if key in mappings and val[:-1] in mappings:
+                documents[mappings[key]].append(mappings[val[:-1]])
     formatted_documents = []
     for doc in documents:
         meta = '::' + doc.replace(' ', '_') + '::'
@@ -50,7 +51,8 @@ def create_documents(mappings, nodes):
 def save_documents(documents):
     """Save the list of documents to a file on disk."""
     for doc in documents:
-        print doc
+        if len(doc.split()) > 1:
+            print doc
 
 def main():
     """Gets input, parses dot files, and creates documents."""
