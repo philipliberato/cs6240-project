@@ -1,9 +1,12 @@
 """Converts dot files to documents"""
 from pprint import pprint
 
+current_file = ''
+
 def handle_input():
     """Opens and returns file corresponding to filename arg."""
     filename = raw_input()
+    current_file = filename
     dotfile = open(filename)
     lines = []
     for line in dotfile:
@@ -50,9 +53,10 @@ def create_documents(mappings, nodes):
 
 def save_documents(documents):
     """Save the list of documents to a file on disk."""
-    for doc in documents:
-        if len(doc.split()) > 1:
-            print doc
+    with open('documents.txt', 'a') as file:
+        for doc in documents:
+            if len(doc.split()) > 1:
+                file.write(doc + '\n')
 
 def main():
     """Gets input, parses dot files, and creates documents."""

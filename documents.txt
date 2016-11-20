@@ -1,0 +1,19 @@
+::A:: B G
+::external_node:: main
+::B:: C
+::G:: M
+::M:: N
+::C:: D X
+::O:: P
+::N:: O
+::P:: S
+::S:: D
+::Y:: D
+::X:: Y
+::main:: A
+::output_buf:: send perror
+::external_node:: main llvm.memcpy.p0i8.p0i8.i64 llvm.memset.p0i8.i64 getopt_long atoi chdir perror signal socket htons setsockopt bind listen accept close pthread_create http_handler fprintf pthread_detach recv memchr strchr strcmp strrchr strncmp open fstat snprintf sendfile send printf exit
+::main:: getopt_long atoi atoi chdir perror print_usage signal socket perror htons setsockopt perror bind perror listen perror accept perror setsockopt setsockopt perror close pthread_create fprintf close pthread_detach fprintf
+::http_handler:: recv fprintf perror memchr fprintf strchr fprintf strcmp fprintf strrchr fprintf strncmp fprintf open fstat perror snprintf output_buf snprintf output_buf sendfile perror close close
+::print_version:: printf
+::print_usage:: print_version printf exit
