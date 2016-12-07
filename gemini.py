@@ -56,7 +56,8 @@ def main():
 		seg.pop(0)
 		documents.append(seg)
 
-	#model.train(documents, total_examples=len(documents))
+	#model.build_vocab(documents, update=True)
+	#model.train(documents)
 	#train the model on all stashed project data
 	model = Word2Vec(documents, min_count=min_occurences)
 
@@ -74,7 +75,7 @@ def main():
 		if seg in no_match_dict.keys():
 			no_match_dict.pop(seg, None)
 
-	model.save('local/code_corpus_'+str(min_occurences)+'.model')
+	model.save('local/'+args[1]+'_corpus_'+str(min_occurences)+'.model')
 	sys.stdout = open(args[0] + '_results_' + args[1] + '.txt', 'w')
 	print(sys.argv)
 	print(matches)
