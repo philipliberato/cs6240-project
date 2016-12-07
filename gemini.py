@@ -24,12 +24,12 @@ def main():
 	#model = Word2Vec.load("local/en_1000_no_stem/en.model")
 	#model_doc is corpus of C/C++ projects' functions
 	#query_doc is current project to analyze
-	model_doc = open('documents.txt', 'r')
-	query_doc = open('linux_docs.txt','r')
+	model_doc = open('./docs/documents.txt', 'r')
+	query_doc = open('./docs/linux_docs.txt','r')
    
 	documents = []
 	for line in model_doc:
-		seg = line.lower().split()
+		seg = line.split()
 		seg.pop(0)
 		documents.append(seg)
 
@@ -39,9 +39,9 @@ def main():
 	#analyze the current subject's functions calls
 	documents = []
 	for line in query_doc:
-		seg = line.lower().split()
+		seg = line.split()
 		callingFunc = seg.pop(0)
-		check_document(model, callingFunc, seg)
+		check_document(model, callingFunc, set(seg))
 
 	#ignore any user-specified functions from avoid.txt
 	avoid_doc = open('avoid.txt','r')
@@ -54,6 +54,7 @@ def main():
 	print(matches)
 	print(no_matches)
 	pprint(no_match_dict)
+	print(len(no_match_dict))
 	print(len(key_error_list))
 
 #collect data about missing functions with close distance to
@@ -76,11 +77,12 @@ def check_document(model, callingFunc, document):
 			intersect = set(document).intersection(candidate_strings)
 			#if related functions not in callee functions, add to no_match dictionary
 			if len(intersect) == 0:
-				if token not in no_match_dict.keys():
-					no_match_dict[token] = [callingFunc]
-					no_matches += 1
-				else:
-					no_match_dict[token].append(callingFunc)
+				if "external_node" not in callingFunc:
+					if token not in no_match_dict.keys():
+						no_match_dict[token] = [callingFunc]
+						no_matches += 1
+					else:
+						no_match_dict[token].append(callingFunc)
 			else:
 				matches += 1
 		#catch error when the searched key is not in the model and track
