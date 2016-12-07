@@ -2,6 +2,7 @@
 import logging
 from gensim.models import Word2Vec
 from pprint import pprint
+import sys
 
 matches = 0
 no_matches = 0
@@ -12,20 +13,42 @@ min_occurences = 1
 num_similarities = 5
 
 def main():
+
+	args = []
+	if len(sys.argv) != 6:
+		exit()
+	
+	args.append(sys.argv[1])
+	args.append(sys.argv[2])
+
 	global threshold
 	global min_occurences
 	global num_similarities
 
 	#parameters to adjust for results
-	threshold = 0.5
-	min_occurences = 1
-	num_similarities = 1000
+	threshold = float(sys.argv[3])
+	min_occurences = int(sys.argv[4])
+	num_similarities = int(sys.argv[5])
 
-	#model = Word2Vec.load("local/en_1000_no_stem/en.model")
+	model_name = ''
+	if args[1] == 'wiki':
+		model_name = 'local/en_1000_no_stem/en.model'
+		print('wiki')
+	elif args[1] == 'code':
+		model_name = 'local/code_corpus.model'
+		print('code')
+	elif args[1] == 'both':
+		model_name = ' '
+		print('both')
+	else:
+		print("Error, arg2 invalid")
+		exit()
+
+	#model = Word2Vec.load(model_name)
 	#model_doc is corpus of C/C++ projects' functions
 	#query_doc is current project to analyze
 	model_doc = open('./docs/documents.txt', 'r')
-	query_doc = open('./docs/linux_docs.txt','r')
+	query_doc = open(args[0] + '.txt','r')
    
 	documents = []
 	for line in model_doc:
@@ -33,6 +56,7 @@ def main():
 		seg.pop(0)
 		documents.append(seg)
 
+	#model.train(documents, total_examples=len(documents))
 	#train the model on all stashed project data
 	model = Word2Vec(documents, min_count=min_occurences)
 
@@ -50,12 +74,15 @@ def main():
 		if seg in no_match_dict.keys():
 			no_match_dict.pop(seg, None)
 
-
+	model.save('local/code_corpus_'+str(min_occurences)+'.model')
+	sys.stdout = open(args[0] + '_results_' + args[1] + '.txt', 'w')
+	print(sys.argv)
 	print(matches)
 	print(no_matches)
 	pprint(no_match_dict)
 	print(len(no_match_dict))
 	print(len(key_error_list))
+	print(no_matches - len(no_match_dict))
 
 #collect data about missing functions with close distance to
 #other present functions
