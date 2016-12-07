@@ -17,12 +17,12 @@ def main():
 
    model = Word2Vec(sentences, min_count=50)
 
-   print(model.similarity('malloc', 'free'))
+   print(model.similarity('malloc', 'realloc'))
    
    #model.train(sentences)
    #print(model.similarity('malloc', 'free'))
    #print(sentences)
-   print(model.most_similar(positive=['pthread_create'],topn=15))
+   print(model.most_similar(positive=['malloc'],topn=15))
 
 
    #print(model.similarity('woman', 'man'))
