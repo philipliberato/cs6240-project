@@ -24,7 +24,7 @@ def main():
     doc = open('results.txt', 'w')
     for key in tracker:
     	for key2 in tracker[key]:
-    		doc.write(key + "-->" + key2 + "= " + str(tracker[key][key2]))
+    		doc.write(key + " " + key2 + " " + str(tracker[key][key2]))
     		doc.write("\n")
     print("---done---")
 
