@@ -2,12 +2,14 @@
 from pprint import pprint
 
 current_file = ''
+filename = ''
 
 def handle_input():
     """Opens and returns file corresponding to filename arg."""
-    filename = raw_input()
-    current_file = filename
-    dotfile = open(filename)
+    global current_file
+    global filename
+    current_file, filename = raw_input().split()
+    dotfile = open(current_file)
     lines = []
     for line in dotfile:
         formatted_line = line.rstrip('\r\n').lstrip('\t')
@@ -42,9 +44,10 @@ def create_documents(mappings, nodes):
         for val in nodes[key]:
             if key in mappings and val[:-1] in mappings:
                 documents[mappings[key]].append(mappings[val[:-1]])
+    global filename
     formatted_documents = []
     for doc in documents:
-        meta = '::' + doc.replace(' ', '_') + '::'
+        meta = '::' + filename + '::' + doc.replace(' ', '_') + '::'
         body = ' '
         for doc_body in documents[doc]:
             body += doc_body + ' '
@@ -64,6 +67,8 @@ def main():
     mappings, nodes = parse_dotlines(dotlines)
     documents = create_documents(mappings, nodes)
     save_documents(documents)
+    global current_file
+    global filename
 
 if __name__ == "__main__":
     main()
