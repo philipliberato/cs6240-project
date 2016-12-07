@@ -1,0 +1,342 @@
+::git-master/progress.c::is_foreground_fd:: tcgetpgrp getpgid
+::git-master/progress.c::display_throughput:: getnanotime calloc strbuf_init throughput_string display
+::git-master/progress.c::external_node:: display_throughput getnanotime calloc strbuf_init display_progress start_progress_delay malloc fprintf fflush start_progress stop_progress stop_progress_msg strlen xmallocz xsnprintf free strbuf_release llvm.memset.p0i8.i64 setitimer signal gettext progress_interval sigemptyset sigaction llvm.memcpy.p0i8.p0i8.i64 fileno tcgetpgrp getpgid strbuf_humanise_bytes strbuf_add die
+::git-master/progress.c::strbuf_setlen:: die
+::git-master/progress.c::stop_progress_msg:: strlen xmallocz throughput_string xsnprintf display free clear_progress_signal strbuf_release free free
+::git-master/progress.c::set_progress_signal:: sigemptyset sigaction setitimer
+::git-master/progress.c::display_progress:: display
+::git-master/progress.c::start_progress_delay:: malloc fprintf fflush set_progress_signal
+::git-master/progress.c::stop_progress:: _ stop_progress_msg
+::git-master/progress.c::clear_progress_signal:: setitimer signal
+::git-master/progress.c::start_progress:: start_progress_delay
+::git-master/progress.c::_:: gettext
+::git-master/progress.c::throughput_string:: strbuf_setlen strbuf_addstr strbuf_humanise_bytes strbuf_addstr strbuf_humanise_bytes strbuf_addstr
+::git-master/progress.c::strbuf_addstr:: strlen strbuf_add
+::git-master/progress.c::display:: clear_progress_signal fileno is_foreground_fd fprintf fflush fileno is_foreground_fd fprintf fflush
+::git-master/utf8.c::strbuf_add_indented_text:: strchrnul strbuf_addchars strbuf_add
+::git-master/utf8.c::external_node:: display_mode_esc_sequence_len utf8_width utf8_strnwidth strlen utf8_strwidth is_utf8 strbuf_add_wrapped_text strbuf_addchars strbuf_add strbuf_add_wrapped_bytes xstrndup free strbuf_utf8_replace llvm.memcpy.p0i8.p0i8.i64 strbuf_grow strbuf_release is_encoding_utf8 strcasecmp same_encoding utf8_fprintf llvm.va_start strbuf_vaddf llvm.va_end fputs reencode_string_iconv xmalloc iconv __errno_location xrealloc reencode_string_len iconv_open iconv_close mbs_chrlen is_hfs_dotgit skip_utf8_bom memcmp strbuf_utf8_align strbuf_addf die strchrnul
+::git-master/utf8.c::strbuf_setlen:: die
+::git-master/utf8.c::strbuf_addstr:: strlen strbuf_add
+::git-master/utf8.c::strbuf_add_wrapped_text:: strbuf_add_indented_text display_mode_esc_sequence_len strbuf_addchars strbuf_add strbuf_addch strbuf_addch strbuf_addch utf8_width strbuf_setlen
+::git-master/utf8.c::strbuf_addch:: strbuf_avail strbuf_grow
+::git-master/utf8.c::skip_utf8_bom:: strlen strlen memcmp strlen
+::git-master/utf8.c::strbuf_utf8_align:: strlen utf8_strnwidth strbuf_addstr strbuf_addf strbuf_addf strbuf_addf
+::git-master/utf8.c::next_hfs_char:: pick_one_utf8_char
+::git-master/utf8.c::strbuf_add_wrapped_bytes:: xstrndup strbuf_add_wrapped_text free
+::git-master/utf8.c::is_hfs_dotgit:: next_hfs_char next_hfs_char next_hfs_char next_hfs_char next_hfs_char git_is_dir_sep
+::git-master/utf8.c::reencode_string_iconv:: xmalloc iconv __errno_location free xrealloc
+::git-master/utf8.c::utf8_strnwidth:: strlen display_mode_esc_sequence_len utf8_width
+::git-master/utf8.c::utf8_fprintf:: strbuf_vaddf fputs utf8_strwidth strbuf_release
+::git-master/utf8.c::reencode_string_len:: iconv_open is_encoding_utf8 is_encoding_utf8 iconv_open reencode_string_iconv iconv_close
+::git-master/utf8.c::git_wcwidth:: bisearch bisearch
+::git-master/utf8.c::mbs_chrlen:: is_encoding_utf8 pick_one_utf8_char
+::git-master/utf8.c::same_encoding:: is_encoding_utf8 is_encoding_utf8 strcasecmp
+::git-master/utf8.c::is_utf8:: utf8_width
+::git-master/utf8.c::utf8_strwidth:: utf8_strnwidth
+::git-master/utf8.c::utf8_width:: pick_one_utf8_char git_wcwidth
+::git-master/utf8.c::strbuf_utf8_replace:: strlen strbuf_grow display_mode_esc_sequence_len utf8_width strbuf_setlen strbuf_swap strbuf_release
+::git-master/utf8.c::is_encoding_utf8:: strcasecmp strcasecmp
+::git-master/send-pack.h::strbuf_add_indented_text:: strchrnul strbuf_addchars strbuf_add
+::git-master/send-pack.h::external_node:: display_mode_esc_sequence_len utf8_width utf8_strnwidth strlen utf8_strwidth is_utf8 strbuf_add_wrapped_text strbuf_addchars strbuf_add strbuf_add_wrapped_bytes xstrndup free strbuf_utf8_replace llvm.memcpy.p0i8.p0i8.i64 strbuf_grow strbuf_release is_encoding_utf8 strcasecmp same_encoding utf8_fprintf llvm.va_start strbuf_vaddf llvm.va_end fputs reencode_string_iconv xmalloc iconv __errno_location xrealloc reencode_string_len iconv_open iconv_close mbs_chrlen is_hfs_dotgit skip_utf8_bom memcmp strbuf_utf8_align strbuf_addf die strchrnul
+::git-master/send-pack.h::strbuf_setlen:: die
+::git-master/send-pack.h::strbuf_addstr:: strlen strbuf_add
+::git-master/send-pack.h::strbuf_add_wrapped_text:: strbuf_add_indented_text display_mode_esc_sequence_len strbuf_addchars strbuf_add strbuf_addch strbuf_addch strbuf_addch utf8_width strbuf_setlen
+::git-master/send-pack.h::strbuf_addch:: strbuf_avail strbuf_grow
+::git-master/send-pack.h::skip_utf8_bom:: strlen strlen memcmp strlen
+::git-master/send-pack.h::strbuf_utf8_align:: strlen utf8_strnwidth strbuf_addstr strbuf_addf strbuf_addf strbuf_addf
+::git-master/send-pack.h::next_hfs_char:: pick_one_utf8_char
+::git-master/send-pack.h::strbuf_add_wrapped_bytes:: xstrndup strbuf_add_wrapped_text free
+::git-master/send-pack.h::is_hfs_dotgit:: next_hfs_char next_hfs_char next_hfs_char next_hfs_char next_hfs_char git_is_dir_sep
+::git-master/send-pack.h::reencode_string_iconv:: xmalloc iconv __errno_location free xrealloc
+::git-master/send-pack.h::utf8_strnwidth:: strlen display_mode_esc_sequence_len utf8_width
+::git-master/send-pack.h::utf8_fprintf:: strbuf_vaddf fputs utf8_strwidth strbuf_release
+::git-master/send-pack.h::reencode_string_len:: iconv_open is_encoding_utf8 is_encoding_utf8 iconv_open reencode_string_iconv iconv_close
+::git-master/send-pack.h::git_wcwidth:: bisearch bisearch
+::git-master/send-pack.h::mbs_chrlen:: is_encoding_utf8 pick_one_utf8_char
+::git-master/send-pack.h::same_encoding:: is_encoding_utf8 is_encoding_utf8 strcasecmp
+::git-master/send-pack.h::is_utf8:: utf8_width
+::git-master/send-pack.h::utf8_strwidth:: utf8_strnwidth
+::git-master/send-pack.h::utf8_width:: pick_one_utf8_char git_wcwidth
+::git-master/send-pack.h::strbuf_utf8_replace:: strlen strbuf_grow display_mode_esc_sequence_len utf8_width strbuf_setlen strbuf_swap strbuf_release
+::git-master/send-pack.h::is_encoding_utf8:: strcasecmp strcasecmp
+::git-master/compat/unsetenv.c::external_node:: gitunsetenv strlen strncmp
+::git-master/compat/unsetenv.c::gitunsetenv:: strlen strlen strncmp
+::git-master/compat/strtoumax.c::external_node:: gitstrtoumax strtoull
+::git-master/compat/strtoumax.c::gitstrtoumax:: strtoull
+::git-master/compat/basename.c::external_node:: gitbasename gitdirname strbuf_addf die
+::git-master/compat/basename.c::gitbasename:: git_skip_dos_drive_prefix git_is_dir_sep git_is_dir_sep git_is_dir_sep
+::git-master/compat/basename.c::strbuf_setlen:: die
+::git-master/compat/basename.c::gitdirname:: git_skip_dos_drive_prefix git_is_dir_sep git_is_dir_sep git_is_dir_sep git_is_dir_sep strbuf_setlen strbuf_addf
+::git-master/compat/nedmalloc/malloc.c.h::external_node:: gitbasename gitdirname strbuf_addf die
+::git-master/compat/nedmalloc/malloc.c.h::gitbasename:: git_skip_dos_drive_prefix git_is_dir_sep git_is_dir_sep git_is_dir_sep
+::git-master/compat/nedmalloc/malloc.c.h::strbuf_setlen:: die
+::git-master/compat/nedmalloc/malloc.c.h::gitdirname:: git_skip_dos_drive_prefix git_is_dir_sep git_is_dir_sep git_is_dir_sep git_is_dir_sep strbuf_setlen strbuf_addf
+::git-master/compat/nedmalloc/nedmalloc.h::external_node:: gitbasename gitdirname strbuf_addf die
+::git-master/compat/nedmalloc/nedmalloc.h::gitbasename:: git_skip_dos_drive_prefix git_is_dir_sep git_is_dir_sep git_is_dir_sep
+::git-master/compat/nedmalloc/nedmalloc.h::strbuf_setlen:: die
+::git-master/compat/nedmalloc/nedmalloc.h::gitdirname:: git_skip_dos_drive_prefix git_is_dir_sep git_is_dir_sep git_is_dir_sep git_is_dir_sep strbuf_setlen strbuf_addf
+::git-master/compat/nedmalloc/nedmalloc.c::nedmalloc_footprint:: nedpmalloc_footprint
+::git-master/compat/nedmalloc/nedmalloc.c::nedmemalign:: nedpmemalign
+::git-master/compat/nedmalloc/nedmalloc.c::AllocCache:: pthread_self abort pthread_self sched_yield abort pthread_self abort mspace_calloc abort pthread_self abort pthread_self abort pthread_self abort pthread_setspecific abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedpindependent_comalloc:: InitPool pthread_getspecific AllocCache pthread_setspecific abort abort pthread_self abort abort pthread_self abort pthread_self FindMSpace mspace_independent_comalloc abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_free:: abort pthread_self abort pthread_self sched_yield munmap abort abort abort abort abort abort abort abort abort abort sys_trim abort abort abort abort abort abort abort abort abort abort abort abort abort abort release_unused_segments abort abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::DestroyCaches:: RemoveCacheEntries abort mspace_free
+::git-master/compat/nedmalloc/nedmalloc.c::internal_malloc_stats:: init_mparams pthread_self abort pthread_self sched_yield fprintf fprintf fprintf abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedprealloc:: nedpmalloc InitPool pthread_getspecific AllocCache pthread_setspecific abort abort pthread_self abort nedblksize abort threadcache_malloc threadcache_free mspace_free mspace_realloc
+::git-master/compat/nedmalloc/nedmalloc.c::tmalloc_small:: abort abort abort abort abort abort abort abort abort abort abort
+::git-master/compat/nedmalloc/nedmalloc.c::neddisablethreadcache:: InitPool pthread_getspecific pthread_setspecific abort printf pthread_setspecific abort RemoveCacheEntries abort mspace_free
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_independent_calloc:: abort ialloc
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_footprint:: abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedcalloc:: nedpcalloc
+::git-master/compat/nedmalloc/nedmalloc.c::nedmalloc_stats:: nedpmalloc_stats
+::git-master/compat/nedmalloc/nedmalloc.c::prepend_alloc:: abort abort abort abort abort abort abort abort abort abort abort abort abort abort abort abort abort
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_independent_comalloc:: abort ialloc
+::git-master/compat/nedmalloc/nedmalloc.c::add_segment:: segment_holding init_top abort abort abort abort abort abort
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_mallinfo:: abort internal_mallinfo
+::git-master/compat/nedmalloc/nedmalloc.c::nedpcalloc:: InitPool pthread_getspecific AllocCache pthread_setspecific abort abort pthread_self abort threadcache_malloc abort pthread_self abort pthread_self FindMSpace mspace_calloc abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::sys_alloc:: init_mparams mmap_alloc mmap init_bins init_top init_top prepend_alloc add_segment __errno_location
+::git-master/compat/nedmalloc/nedmalloc.c::release_unused_segments:: abort abort abort abort abort abort abort munmap abort abort
+::git-master/compat/nedmalloc/nedmalloc.c::threadcache_malloc:: abort abort abort nedblksize abort abort abort nedblksize nedblksize abort abort abort
+::git-master/compat/nedmalloc/nedmalloc.c::internal_mallinfo:: init_mparams pthread_self abort pthread_self sched_yield abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::InitPool:: init_mparams pthread_self abort pthread_self sched_yield pthread_key_create create_mspace abort pthread_self abort abort DestroyCaches destroy_mspace pthread_key_delete abort abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedblksize:: abort
+::git-master/compat/nedmalloc/nedmalloc.c::init_user_mstate:: init_bins init_top
+::git-master/compat/nedmalloc/nedmalloc.c::mmap_resize:: mremap
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_realloc:: mspace_malloc abort internal_realloc
+::git-master/compat/nedmalloc/nedmalloc.c::neddestroypool:: pthread_self abort pthread_self sched_yield DestroyCaches destroy_mspace abort pthread_self abort pthread_key_delete abort nedpfree
+::git-master/compat/nedmalloc/nedmalloc.c::nedpmalloc_stats:: InitPool mspace_malloc_stats
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_memalign:: abort internal_memalign
+::git-master/compat/nedmalloc/nedmalloc.c::nedindependent_comalloc:: nedpindependent_comalloc
+::git-master/compat/nedmalloc/nedmalloc.c::change_mparam:: init_mparams
+::git-master/compat/nedmalloc/nedmalloc.c::nedpmalloc_footprint:: InitPool mspace_footprint
+::git-master/compat/nedmalloc/nedmalloc.c::nedpfree:: abort InitPool pthread_getspecific AllocCache pthread_setspecific abort abort pthread_self abort nedblksize abort threadcache_free mspace_free
+::git-master/compat/nedmalloc/nedmalloc.c::init_mparams:: pthread_self abort pthread_self sched_yield sysconf abort time abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_malloc_stats:: internal_malloc_stats abort
+::git-master/compat/nedmalloc/nedmalloc.c::ialloc:: init_mparams mspace_malloc mspace_malloc pthread_self abort pthread_self sched_yield abort abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_mmap_large_chunks:: pthread_self abort pthread_self sched_yield abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::threadcache_free:: abort abort abort fprintf abort abort abort abort ReleaseFreeInCache
+::git-master/compat/nedmalloc/nedmalloc.c::ReleaseFreeInCache:: RemoveCacheEntries
+::git-master/compat/nedmalloc/nedmalloc.c::nedcreatepool:: nedpcalloc InitPool nedpfree
+::git-master/compat/nedmalloc/nedmalloc.c::nedmalloc:: nedpmalloc
+::git-master/compat/nedmalloc/nedmalloc.c::nedpmallinfo:: InitPool mspace_mallinfo
+::git-master/compat/nedmalloc/nedmalloc.c::external_node:: dlmalloc_usable_size create_mspace mmap create_mspace_with_base mspace_mmap_large_chunks destroy_mspace munmap abort mspace_malloc llvm.expect.i64 mspace_free mspace_calloc llvm.memset.p0i8.i64 mspace_realloc mspace_memalign mspace_independent_calloc mspace_independent_comalloc mspace_trim mspace_malloc_stats mspace_footprint mspace_max_footprint mspace_mallinfo mspace_usable_size mspace_mallopt nedblksize nedsetvalue nedpsetvalue nedmalloc nedpmalloc nedcalloc nedpcalloc nedrealloc nedprealloc nedfree nedpfree nedmemalign nedpmemalign nedmallinfo nedpmallinfo nedmallopt nedpmallopt nedmalloc_trim nedpmalloc_trim nedmalloc_stats nedpmalloc_stats nedmalloc_footprint nedpmalloc_footprint nedindependent_calloc nedpindependent_calloc nedindependent_comalloc nedpindependent_comalloc nedcreatepool neddestroypool pthread_key_delete nedgetvalue neddisablethreadcache pthread_getspecific pthread_setspecific printf llvm.memcpy.p0i8.p0i8.i64 fprintf llvm.ctlz.i32 pthread_self pthread_key_create __errno_location mremap sched_yield sysconf time
+::git-master/compat/nedmalloc/nedmalloc.c::nedpmalloc:: InitPool pthread_getspecific AllocCache pthread_setspecific abort abort pthread_self abort threadcache_malloc abort pthread_self abort pthread_self FindMSpace mspace_malloc abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::tmalloc_large:: abort abort abort abort abort abort abort abort abort abort abort abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedsetvalue:: nedpsetvalue
+::git-master/compat/nedmalloc/nedmalloc.c::nedpsetvalue:: InitPool
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_max_footprint:: abort
+::git-master/compat/nedmalloc/nedmalloc.c::create_mspace_with_base:: init_mparams init_user_mstate
+::git-master/compat/nedmalloc/nedmalloc.c::RemoveCacheEntries:: nedblksize abort abort abort mspace_free
+::git-master/compat/nedmalloc/nedmalloc.c::nedpmallopt:: mspace_mallopt
+::git-master/compat/nedmalloc/nedmalloc.c::mmap_alloc:: mmap abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedpindependent_calloc:: InitPool pthread_getspecific AllocCache pthread_setspecific abort abort pthread_self abort abort pthread_self abort pthread_self FindMSpace mspace_independent_calloc abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedmallopt:: nedpmallopt
+::git-master/compat/nedmalloc/nedmalloc.c::nedmallinfo:: nedpmallinfo
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_mallopt:: change_mparam
+::git-master/compat/nedmalloc/nedmalloc.c::nedpmemalign:: InitPool pthread_getspecific AllocCache pthread_setspecific abort abort pthread_self abort abort pthread_self abort pthread_self FindMSpace mspace_memalign abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedpmalloc_trim:: InitPool mspace_trim
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_malloc:: abort pthread_self abort pthread_self sched_yield abort abort abort abort abort abort abort abort abort abort abort abort abort tmalloc_small tmalloc_large sys_alloc abort pthread_self abort
+::git-master/compat/nedmalloc/nedmalloc.c::FindMSpace:: pthread_self abort pthread_self pthread_self abort pthread_self create_mspace pthread_self abort pthread_self sched_yield abort pthread_self abort destroy_mspace pthread_self abort pthread_self sched_yield abort pthread_self abort pthread_self abort pthread_self sched_yield pthread_setspecific abort
+::git-master/compat/nedmalloc/nedmalloc.c::internal_realloc:: __errno_location pthread_self abort pthread_self sched_yield mmap_resize abort abort pthread_self abort mspace_free mspace_malloc mspace_free
+::git-master/compat/nedmalloc/nedmalloc.c::nedfree:: nedpfree
+::git-master/compat/nedmalloc/nedmalloc.c::sys_trim:: init_mparams segment_holding has_segment_link mremap munmap init_top release_unused_segments
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_calloc:: abort mspace_malloc
+::git-master/compat/nedmalloc/nedmalloc.c::nedrealloc:: nedprealloc
+::git-master/compat/nedmalloc/nedmalloc.c::destroy_mspace:: munmap abort
+::git-master/compat/nedmalloc/nedmalloc.c::nedmalloc_trim:: nedpmalloc_trim
+::git-master/compat/nedmalloc/nedmalloc.c::nedindependent_calloc:: nedpindependent_calloc
+::git-master/compat/nedmalloc/nedmalloc.c::create_mspace:: init_mparams mmap init_user_mstate
+::git-master/compat/nedmalloc/nedmalloc.c::internal_memalign:: mspace_malloc __errno_location mspace_malloc pthread_self abort pthread_self sched_yield abort abort abort pthread_self abort mspace_free mspace_free
+::git-master/compat/nedmalloc/nedmalloc.c::mspace_trim:: pthread_self abort pthread_self sched_yield sys_trim abort pthread_self abort abort
+::git-master/compat/fopen.c::external_node:: git_fopen fopen64 fstat64 fileno fclose __errno_location
+::git-master/compat/fopen.c::git_fopen:: fopen64 fopen64 fileno fstat64 fclose fclose __errno_location
+::git-master/compat/pread.c::git_pread:: lseek64 lseek64 read_in_full lseek64
+::git-master/compat/pread.c::external_node:: git_pread lseek64 read_in_full
+::git-master/compat/strdup.c::external_node:: gitstrdup strlen malloc llvm.memcpy.p0i8.p0i8.i64
+::git-master/compat/strdup.c::gitstrdup:: strlen malloc
+::git-master/compat/snprintf.c::external_node:: git_vsnprintf llvm.va_copy vsnprintf llvm.va_end realloc free git_snprintf llvm.va_start
+::git-master/compat/snprintf.c::git_vsnprintf:: vsnprintf realloc vsnprintf free
+::git-master/compat/snprintf.c::git_snprintf:: git_vsnprintf
+::git-master/compat/qsort.c::msort_with_tmp:: msort_with_tmp msort_with_tmp
+::git-master/compat/qsort.c::external_node:: git_qsort xmalloc free llvm.memcpy.p0i8.p0i8.i64 die
+::git-master/compat/qsort.c::st_mult:: die
+::git-master/compat/qsort.c::git_qsort:: st_mult msort_with_tmp xmalloc msort_with_tmp free
+::git-master/compat/mmap.c::external_node:: git_mmap die xmalloc __errno_location xpread llvm.memset.p0i8.i64 free git_munmap
+::git-master/compat/mmap.c::git_munmap:: free
+::git-master/compat/mmap.c::git_mmap:: die xmalloc __errno_location xpread free __errno_location
+::git-master/compat/mkdtemp.c::gitmkdtemp:: mktemp mkdir
+::git-master/compat/mkdtemp.c::external_node:: gitmkdtemp mktemp mkdir
+::git-master/compat/terminal.h::gitmkdtemp:: mktemp mkdir
+::git-master/compat/terminal.h::external_node:: gitmkdtemp mktemp mkdir
+::git-master/compat/obstack.h::gitmkdtemp:: mktemp mkdir
+::git-master/compat/obstack.h::external_node:: gitmkdtemp mktemp mkdir
+::git-master/compat/setenv.c::external_node:: gitsetenv strchr __errno_location getenv strlen malloc llvm.memcpy.p0i8.p0i8.i64 putenv die
+::git-master/compat/setenv.c::gitsetenv:: strchr __errno_location getenv strlen strlen st_add st_add malloc __errno_location putenv
+::git-master/compat/setenv.c::st_add:: die
+::git-master/compat/mkdir.c::external_node:: compat_mkdir_wo_trailing_slash strlen strdup mkdir free
+::git-master/compat/mkdir.c::compat_mkdir_wo_trailing_slash:: strlen strdup mkdir free
+::git-master/compat/memmem.c::external_node:: gitmemmem memcmp
+::git-master/compat/memmem.c::gitmemmem:: memcmp
+::git-master/compat/hstrerror.c::githstrerror:: snprintf
+::git-master/compat/hstrerror.c::external_node:: githstrerror snprintf
+::git-master/compat/inet_pton.c::inet_pton4:: strchr
+::git-master/compat/inet_pton.c::external_node:: inet_pton __errno_location llvm.memset.p0i8.i64 strchr llvm.memcpy.p0i8.p0i8.i64
+::git-master/compat/inet_pton.c::inet_pton6:: strchr strchr inet_pton4
+::git-master/compat/inet_pton.c::inet_pton:: inet_pton4 inet_pton6 __errno_location
+::git-master/compat/stat.c::git_lstat:: lstat mode_native_to_git
+::git-master/compat/stat.c::external_node:: git_stat stat git_fstat fstat git_lstat lstat
+::git-master/compat/stat.c::git_stat:: stat mode_native_to_git
+::git-master/compat/stat.c::git_fstat:: fstat mode_native_to_git
+::git-master/compat/precompose_utf8.h::git_lstat:: lstat mode_native_to_git
+::git-master/compat/precompose_utf8.h::external_node:: git_stat stat git_fstat fstat git_lstat lstat
+::git-master/compat/precompose_utf8.h::git_stat:: stat mode_native_to_git
+::git-master/compat/precompose_utf8.h::git_fstat:: fstat mode_native_to_git
+::git-master/compat/poll/poll.h::git_lstat:: lstat mode_native_to_git
+::git-master/compat/poll/poll.h::external_node:: git_stat stat git_fstat fstat git_lstat lstat
+::git-master/compat/poll/poll.h::git_stat:: stat mode_native_to_git
+::git-master/compat/poll/poll.h::git_fstat:: fstat mode_native_to_git
+::git-master/compat/poll/poll.c::external_node:: poll sysconf __errno_location select recv
+::git-master/compat/poll/poll.c::compute_revents:: recv __errno_location
+::git-master/compat/poll/poll.c::poll:: sysconf __errno_location __errno_location __errno_location __errno_location select compute_revents
+::git-master/compat/vcbuild/include/sys/time.h::external_node:: poll sysconf __errno_location select recv
+::git-master/compat/vcbuild/include/sys/time.h::compute_revents:: recv __errno_location
+::git-master/compat/vcbuild/include/sys/time.h::poll:: sysconf __errno_location __errno_location __errno_location __errno_location select compute_revents
+::git-master/compat/vcbuild/include/sys/param.h::external_node:: poll sysconf __errno_location select recv
+::git-master/compat/vcbuild/include/sys/param.h::compute_revents:: recv __errno_location
+::git-master/compat/vcbuild/include/sys/param.h::poll:: sysconf __errno_location __errno_location __errno_location __errno_location select compute_revents
+::git-master/compat/strlcpy.c::gitstrlcpy:: strlen
+::git-master/compat/strlcpy.c::external_node:: gitstrlcpy strlen llvm.memcpy.p0i8.p0i8.i64
+::git-master/compat/strtoimax.c::external_node:: gitstrtoimax strtoll
+::git-master/compat/strtoimax.c::gitstrtoimax:: strtoll
+::git-master/compat/strcasestr.c::external_node:: gitstrcasestr strlen
+::git-master/compat/strcasestr.c::gitstrcasestr:: strlen strlen sane_case sane_case
+::git-master/diff-delta.c::create_delta_index:: malloc calloc free free malloc free __assert_fail free
+::git-master/diff-delta.c::external_node:: create_delta_index malloc llvm.memset.p0i8.i64 calloc free llvm.memcpy.p0i8.p0i8.i64 __assert_fail free_delta_index sizeof_delta_index create_delta realloc
+::git-master/diff-delta.c::free_delta_index:: free
+::git-master/diff-delta.c::create_delta:: malloc realloc free free
+::git-master/ppc/sha1.c::ppc_SHA1_Update:: ppc_sha1_core ppc_sha1_core
+::git-master/ppc/sha1.c::ppc_SHA1_Final:: ppc_sha1_core ppc_sha1_core
+::git-master/ppc/sha1.c::external_node:: ppc_SHA1_Init ppc_SHA1_Update llvm.memcpy.p0i8.p0i8.i64 ppc_sha1_core ppc_SHA1_Final llvm.memset.p0i8.i64
+::git-master/ppc/sha1.h::ppc_SHA1_Update:: ppc_sha1_core ppc_sha1_core
+::git-master/ppc/sha1.h::ppc_SHA1_Final:: ppc_sha1_core ppc_sha1_core
+::git-master/ppc/sha1.h::external_node:: ppc_SHA1_Init ppc_SHA1_Update llvm.memcpy.p0i8.p0i8.i64 ppc_sha1_core ppc_SHA1_Final llvm.memset.p0i8.i64
+::git-master/sh-i18n--envsubst.c::cmd_main:: error const_error note_variables subst_from_stdin strcmp error const_error print_variables error const_error __errno_location ferror fflush fclose exit fclose __errno_location exit exit
+::git-master/sh-i18n--envsubst.c::print_variables:: find_variables
+::git-master/sh-i18n--envsubst.c::st_mult:: die
+::git-master/sh-i18n--envsubst.c::do_ungetc:: ungetc
+::git-master/sh-i18n--envsubst.c::cmp_string:: strcmp
+::git-master/sh-i18n--envsubst.c::sorted_string_list_member:: strcmp strcmp
+::git-master/sh-i18n--envsubst.c::subst_from_stdin:: do_getc do_getc do_getc xrealloc do_getc do_ungetc do_ungetc xrealloc sorted_string_list_member getenv fputs putchar putchar fwrite putchar do_ungetc putchar putchar putchar
+::git-master/sh-i18n--envsubst.c::sane_qsort:: qsort
+::git-master/sh-i18n--envsubst.c::external_node:: cmd_main error strcmp __errno_location ferror fflush fclose exit xrealloc getenv fputs putchar fwrite ungetc _IO_getc note_variable cmp_string qsort xmemdupz die print_variable
+::git-master/sh-i18n--envsubst.c::note_variable:: xmemdupz string_list_append
+::git-master/sh-i18n--envsubst.c::do_getc:: _IO_getc ferror error const_error
+::git-master/sh-i18n--envsubst.c::note_variables:: string_list_init find_variables string_list_sort
+::git-master/sh-i18n--envsubst.c::string_list_append:: st_mult xrealloc
+::git-master/sh-i18n--envsubst.c::print_variable:: fwrite putchar
+::git-master/sh-i18n--envsubst.c::string_list_sort:: sane_qsort
+::git-master/xdiff/xdiffi.c::measure_split:: get_indent get_indent get_indent
+::git-master/xdiff/xdiffi.c::xdl_add_change:: malloc
+::git-master/xdiff/xdiffi.c::group_slide_down:: recs_match
+::git-master/xdiff/xdiffi.c::is_blank_line:: xdl_blankline
+::git-master/xdiff/xdiffi.c::xdl_recs_cmp:: xdl_split xdl_recs_cmp xdl_recs_cmp
+::git-master/xdiff/xdiffi.c::xdl_do_diff:: xdl_do_patience_diff xdl_do_histogram_diff xdl_prepare_env malloc xdl_free_env xdl_bogosqrt xdl_recs_cmp free xdl_free_env free
+::git-master/xdiff/xdiffi.c::xdl_diff:: xdl_do_diff xdl_change_compact xdl_change_compact xdl_build_script xdl_free_env xdl_mark_ignorable xdl_free_script xdl_free_env xdl_free_script xdl_free_env
+::git-master/xdiff/xdiffi.c::external_node:: xdl_recs_cmp xdl_do_diff xdl_do_patience_diff xdl_do_histogram_diff xdl_prepare_env malloc xdl_free_env xdl_bogosqrt free xdl_change_compact llvm.memset.p0i8.i64 xdl_build_script xdl_free_script xdl_diff xdl_call_hunk_func xdl_emit_diff xdl_emit_diff xdl_blankline xdl_get_hunk __ctype_b_loc xdl_recmatch fprintf exit
+::git-master/xdiff/xdiffi.c::xdl_change_compact:: group_init group_init group_slide_up group_previous xdl_bug is_blank_line group_slide_down group_next xdl_bug group_slide_up xdl_bug group_previous xdl_bug is_blank_line group_slide_up xdl_bug group_previous xdl_bug measure_split score_add_split measure_split score_add_split score_cmp group_slide_up xdl_bug group_previous xdl_bug group_next group_next xdl_bug group_next xdl_bug
+::git-master/xdiff/xdiffi.c::xdl_bug:: fprintf exit
+::git-master/xdiff/xdiffi.c::xdl_call_hunk_func:: xdl_get_hunk
+::git-master/xdiff/xdiffi.c::group_slide_up:: recs_match
+::git-master/xdiff/xdiffi.c::xdl_build_script:: xdl_add_change xdl_free_script
+::git-master/xdiff/xdiffi.c::get_indent:: __ctype_b_loc
+::git-master/xdiff/xdiffi.c::xdl_free_script:: free
+::git-master/xdiff/xdiffi.c::xdl_mark_ignorable:: xdl_blankline xdl_blankline
+::git-master/xdiff/xdiffi.c::recs_match:: xdl_recmatch
+::git-master/xdiff/xhistogram.c::external_node:: xdl_do_histogram_diff xdl_prepare_env llvm.memset.p0i8.i64 xdl_hashbits malloc xdl_cha_init free xdl_cha_free xdl_fall_back_diff xdl_recmatch xdl_cha_alloc
+::git-master/xdiff/xhistogram.c::histogram_diff:: xdl_hashbits malloc malloc malloc xdl_cha_init find_lcs fall_back_to_classic_diff histogram_diff histogram_diff free free free xdl_cha_free
+::git-master/xdiff/xhistogram.c::scanA:: cmp_recs xdl_cha_alloc
+::git-master/xdiff/xhistogram.c::find_lcs:: scanA try_lcs
+::git-master/xdiff/xhistogram.c::fall_back_to_classic_diff:: xdl_fall_back_diff
+::git-master/xdiff/xhistogram.c::xdl_do_histogram_diff:: xdl_prepare_env histogram_diff
+::git-master/xdiff/xhistogram.c::cmp_recs:: xdl_recmatch
+::git-master/xdiff/xhistogram.c::try_lcs:: cmp_recs cmp_recs cmp_recs cmp_recs
+::git-master/xdiff/xmerge.c::xdl_merge_cmp_lines:: xdl_recmatch
+::git-master/xdiff/xmerge.c::xdl_do_merge:: xdl_append_merge xdl_cleanup_merge xdl_append_merge xdl_cleanup_merge xdl_merge_cmp_lines xdl_append_merge xdl_cleanup_merge xdl_append_merge xdl_cleanup_merge xdl_append_merge xdl_cleanup_merge xdl_refine_conflicts xdl_simplify_non_conflicts xdl_cleanup_merge xdl_fill_merge_buffer malloc xdl_cleanup_merge xdl_fill_merge_buffer xdl_cleanup_merge
+::git-master/xdiff/xmerge.c::lines_contain_alnum:: line_contains_alnum
+::git-master/xdiff/xmerge.c::xdl_recs_copy:: xdl_recs_copy_0
+::git-master/xdiff/xmerge.c::line_contains_alnum:: __ctype_b_loc
+::git-master/xdiff/xmerge.c::external_node:: xdl_merge xdl_do_diff xdl_free_env xdl_change_compact xdl_build_script xdl_free_script malloc llvm.memcpy.p0i8.p0i8.i64 strlen llvm.memset.p0i8.i64 free __ctype_b_loc xdl_recmatch
+::git-master/xdiff/xmerge.c::xdl_fill_merge_buffer:: fill_conflict_hunk xdl_recs_copy is_cr_needed xdl_recs_copy xdl_recs_copy xdl_recs_copy
+::git-master/xdiff/xmerge.c::xdl_merge_two_conflicts:: free
+::git-master/xdiff/xmerge.c::xdl_cleanup_merge:: free
+::git-master/xdiff/xmerge.c::is_cr_needed:: is_eol_crlf is_eol_crlf is_eol_crlf
+::git-master/xdiff/xmerge.c::fill_conflict_hunk:: strlen strlen strlen is_cr_needed xdl_recs_copy xdl_recs_copy xdl_orig_copy xdl_recs_copy
+::git-master/xdiff/xmerge.c::xdl_merge:: xdl_do_diff xdl_do_diff xdl_free_env xdl_change_compact xdl_change_compact xdl_build_script xdl_free_env xdl_change_compact xdl_change_compact xdl_build_script xdl_free_script xdl_free_env xdl_free_env malloc malloc xdl_do_merge xdl_free_script xdl_free_script xdl_free_env xdl_free_env
+::git-master/xdiff/xmerge.c::xdl_append_merge:: malloc
+::git-master/xdiff/xmerge.c::xdl_orig_copy:: xdl_recs_copy_0
+::git-master/xdiff/xmerge.c::xdl_simplify_non_conflicts:: lines_contain_alnum xdl_merge_two_conflicts
+::git-master/xdiff/xmerge.c::xdl_refine_conflicts:: xdl_do_diff xdl_change_compact xdl_change_compact xdl_build_script xdl_free_env xdl_free_env malloc xdl_free_env xdl_free_script xdl_free_env xdl_free_script
+::git-master/xdiff/xinclude.h::xdl_merge_cmp_lines:: xdl_recmatch
+::git-master/xdiff/xinclude.h::xdl_do_merge:: xdl_append_merge xdl_cleanup_merge xdl_append_merge xdl_cleanup_merge xdl_merge_cmp_lines xdl_append_merge xdl_cleanup_merge xdl_append_merge xdl_cleanup_merge xdl_append_merge xdl_cleanup_merge xdl_refine_conflicts xdl_simplify_non_conflicts xdl_cleanup_merge xdl_fill_merge_buffer malloc xdl_cleanup_merge xdl_fill_merge_buffer xdl_cleanup_merge
+::git-master/xdiff/xinclude.h::lines_contain_alnum:: line_contains_alnum
+::git-master/xdiff/xinclude.h::xdl_recs_copy:: xdl_recs_copy_0
+::git-master/xdiff/xinclude.h::line_contains_alnum:: __ctype_b_loc
+::git-master/xdiff/xinclude.h::external_node:: xdl_merge xdl_do_diff xdl_free_env xdl_change_compact xdl_build_script xdl_free_script malloc llvm.memcpy.p0i8.p0i8.i64 strlen llvm.memset.p0i8.i64 free __ctype_b_loc xdl_recmatch
+::git-master/xdiff/xinclude.h::xdl_fill_merge_buffer:: fill_conflict_hunk xdl_recs_copy is_cr_needed xdl_recs_copy xdl_recs_copy xdl_recs_copy
+::git-master/xdiff/xinclude.h::xdl_merge_two_conflicts:: free
+::git-master/xdiff/xinclude.h::xdl_cleanup_merge:: free
+::git-master/xdiff/xinclude.h::is_cr_needed:: is_eol_crlf is_eol_crlf is_eol_crlf
+::git-master/xdiff/xinclude.h::fill_conflict_hunk:: strlen strlen strlen is_cr_needed xdl_recs_copy xdl_recs_copy xdl_orig_copy xdl_recs_copy
+::git-master/xdiff/xinclude.h::xdl_merge:: xdl_do_diff xdl_do_diff xdl_free_env xdl_change_compact xdl_change_compact xdl_build_script xdl_free_env xdl_change_compact xdl_change_compact xdl_build_script xdl_free_script xdl_free_env xdl_free_env malloc malloc xdl_do_merge xdl_free_script xdl_free_script xdl_free_env xdl_free_env
+::git-master/xdiff/xinclude.h::xdl_append_merge:: malloc
+::git-master/xdiff/xinclude.h::xdl_orig_copy:: xdl_recs_copy_0
+::git-master/xdiff/xinclude.h::xdl_simplify_non_conflicts:: lines_contain_alnum xdl_merge_two_conflicts
+::git-master/xdiff/xinclude.h::xdl_refine_conflicts:: xdl_do_diff xdl_change_compact xdl_change_compact xdl_build_script xdl_free_env xdl_free_env malloc xdl_free_env xdl_free_script xdl_free_env xdl_free_script
+::git-master/xdiff/xpatience.c::xdl_do_patience_diff:: xdl_prepare_env patience_diff
+::git-master/xdiff/xpatience.c::patience_diff:: fill_hashmap free find_longest_common_sequence walk_common_sequence fall_back_to_classic_diff free
+::git-master/xdiff/xpatience.c::walk_common_sequence:: match match patience_diff
+::git-master/xdiff/xpatience.c::external_node:: xdl_do_patience_diff xdl_prepare_env llvm.memset.p0i8.i64 free xdl_fall_back_diff xdl_recmatch malloc
+::git-master/xdiff/xpatience.c::find_longest_common_sequence:: malloc binary_search free free
+::git-master/xdiff/xpatience.c::insert_record:: xdl_recmatch
+::git-master/xdiff/xpatience.c::match:: xdl_recmatch
+::git-master/xdiff/xpatience.c::fill_hashmap:: malloc insert_record insert_record
+::git-master/xdiff/xpatience.c::fall_back_to_classic_diff:: xdl_fall_back_diff
+::git-master/xdiff/xutils.c::external_node:: xdl_bogosqrt xdl_emit_diffrec strlen xdl_mmfile_first xdl_mmfile_size xdl_cha_init xdl_cha_free free xdl_cha_alloc malloc xdl_guess_lines memchr xdl_blankline __ctype_b_loc xdl_recmatch memcmp xdl_hash_record xdl_hashbits xdl_num_out xdl_emit_hunk_hdr llvm.memcpy.p0i8.p0i8.i64 xdl_fall_back_diff xdl_do_diff xdl_free_env
+::git-master/xdiff/xutils.c::xdl_hash_record_with_whitespace:: __ctype_b_loc __ctype_b_loc
+::git-master/xdiff/xutils.c::xdl_guess_lines:: xdl_mmfile_first memchr xdl_mmfile_size
+::git-master/xdiff/xutils.c::xdl_cha_free:: free
+::git-master/xdiff/xutils.c::xdl_recmatch:: memcmp __ctype_b_loc __ctype_b_loc __ctype_b_loc __ctype_b_loc __ctype_b_loc __ctype_b_loc __ctype_b_loc __ctype_b_loc
+::git-master/xdiff/xutils.c::xdl_cha_alloc:: malloc
+::git-master/xdiff/xutils.c::xdl_emit_hunk_hdr:: xdl_num_out xdl_num_out xdl_num_out xdl_num_out
+::git-master/xdiff/xutils.c::xdl_blankline:: __ctype_b_loc
+::git-master/xdiff/xutils.c::xdl_emit_diffrec:: strlen
+::git-master/xdiff/xutils.c::xdl_fall_back_diff:: xdl_do_diff xdl_free_env
+::git-master/xdiff/xutils.c::xdl_hash_record:: xdl_hash_record_with_whitespace
+::git-master/xdiff/xemit.c::xdl_emit_diff:: xdl_get_hunk is_empty_rec match_func_rec get_func_line get_func_line is_empty_rec get_func_line get_func_line xdl_emit_hunk_hdr xdl_emit_record xdl_emit_record xdl_emit_record xdl_emit_record xdl_emit_record
+::git-master/xdiff/xemit.c::external_node:: xdl_get_hunk xdl_emit_diff llvm.memset.p0i8.i64 xdl_emit_hunk_hdr strlen xdl_emit_diffrec __ctype_b_loc llvm.memcpy.p0i8.p0i8.i64
+::git-master/xdiff/xemit.c::get_func_line:: match_func_rec
+::git-master/xdiff/xemit.c::match_func_rec:: xdl_get_rec def_ff
+::git-master/xdiff/xemit.c::def_ff:: __ctype_b_loc __ctype_b_loc
+::git-master/xdiff/xemit.c::is_empty_rec:: xdl_get_rec __ctype_b_loc
+::git-master/xdiff/xemit.c::xdl_emit_record:: strlen xdl_get_rec xdl_emit_diffrec
+::git-master/xdiff/xprepare.c::xdl_free_env:: xdl_free_ctx xdl_free_ctx
+::git-master/xdiff/xprepare.c::xdl_free_classifier:: free free xdl_cha_free
+::git-master/xdiff/xprepare.c::xdl_cleanup_records:: malloc xdl_bogosqrt xdl_bogosqrt xdl_clean_mmatch xdl_clean_mmatch free
+::git-master/xdiff/xprepare.c::xdl_init_classifier:: xdl_hashbits xdl_cha_init malloc xdl_cha_free malloc free xdl_cha_free
+::git-master/xdiff/xprepare.c::xdl_optimize_ctxs:: xdl_trim_ends xdl_cleanup_records
+::git-master/xdiff/xprepare.c::external_node:: xdl_prepare_env llvm.memset.p0i8.i64 xdl_guess_lines xdl_free_env malloc xdl_bogosqrt free xdl_cha_free xdl_cha_init xdl_hashbits xdl_mmfile_first xdl_hash_record realloc xdl_cha_alloc xdl_recmatch
+::git-master/xdiff/xprepare.c::xdl_classify_record:: xdl_recmatch xdl_cha_alloc realloc
+::git-master/xdiff/xprepare.c::xdl_prepare_env:: xdl_guess_lines xdl_guess_lines xdl_init_classifier xdl_prepare_ctx xdl_free_classifier xdl_prepare_ctx xdl_free_ctx xdl_free_classifier xdl_optimize_ctxs xdl_free_ctx xdl_free_ctx xdl_free_classifier xdl_free_classifier
+::git-master/xdiff/xprepare.c::xdl_prepare_ctx:: xdl_cha_init malloc xdl_hashbits malloc xdl_mmfile_first xdl_hash_record realloc xdl_cha_alloc xdl_classify_record malloc malloc malloc free free free free free xdl_cha_free
+::git-master/xdiff/xprepare.c::xdl_free_ctx:: free free free free free xdl_cha_free
+::git-master/varint.c::external_node:: decode_varint encode_varint llvm.memcpy.p0i8.p0i8.i64
+::git-master/block-sha1/sha1.c::blk_SHA1_Block:: git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32
+::git-master/block-sha1/sha1.c::external_node:: blk_SHA1_Init blk_SHA1_Update llvm.memcpy.p0i8.p0i8.i64 blk_SHA1_Final
+::git-master/block-sha1/sha1.c::blk_SHA1_Update:: blk_SHA1_Block blk_SHA1_Block
+::git-master/block-sha1/sha1.c::blk_SHA1_Final:: git_bswap32 git_bswap32 blk_SHA1_Update blk_SHA1_Update git_bswap32
+::git-master/block-sha1/sha1.h::blk_SHA1_Block:: git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32 git_bswap32
+::git-master/block-sha1/sha1.h::external_node:: blk_SHA1_Init blk_SHA1_Update llvm.memcpy.p0i8.p0i8.i64 blk_SHA1_Final
+::git-master/block-sha1/sha1.h::blk_SHA1_Update:: blk_SHA1_Block blk_SHA1_Block
+::git-master/block-sha1/sha1.h::blk_SHA1_Final:: git_bswap32 git_bswap32 blk_SHA1_Update blk_SHA1_Update git_bswap32
+::git-master/patch-delta.c::patch_delta:: get_delta_hdr_size get_delta_hdr_size xmallocz error const_error error const_error free
+::git-master/patch-delta.c::external_node:: patch_delta xmallocz llvm.memcpy.p0i8.p0i8.i64 error free

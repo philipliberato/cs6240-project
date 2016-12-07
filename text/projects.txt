@@ -1,0 +1,25 @@
+--In the mega-doc--
+
+FreeBSD
+Miktex
+MJ AntiVirusEngine
+Legion Parallel Programming System (Stanford)
+Github Linguist Library
+KDE applications tutorial library and editor
+Redis
+Emscripten: LLVVM-to-JS compiler
+Epic Survival Game Series Unreal Engine 4 tutorial
+FreeBSD
+FileZilla
+OpenCV
+TensorFlow
+WinDirStat
+Boost Library
+
+
+--testing projects--
+
+Linux kernel
+Openssl
+Git
+sqlite
