@@ -1,0 +1,2 @@
+::sigalrm_handler:: printf clean exit
+::readable:: select perror exit
