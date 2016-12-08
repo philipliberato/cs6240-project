@@ -35,7 +35,7 @@ def main():
 		model_name = 'local/en_1000_no_stem/en.model'
 		print('wiki')
 	elif args[1] == 'code':
-		model_name = 'local/code_corpus.model'
+		model_name = 'local/code_corpus_'+str(min_occurences)+'.model'
 		print('code')
 	elif args[1] == 'both':
 		model_name = ' '
@@ -44,7 +44,7 @@ def main():
 		print("Error, arg2 invalid")
 		exit()
 
-	#model = Word2Vec.load(model_name)
+	model = Word2Vec.load(model_name)
 	#model_doc is corpus of C/C++ projects' functions
 	#query_doc is current project to analyze
 	model_doc = open('./docs/documents.txt', 'r')
@@ -56,10 +56,11 @@ def main():
 		seg.pop(0)
 		documents.append(seg)
 
-	#model.build_vocab(documents, update=True)
-	#model.train(documents)
+
+	#model.build_vocab(documents)
+	#model.train(documents, total_examples=len(documents))
 	#train the model on all stashed project data
-	model = Word2Vec(documents, min_count=min_occurences)
+	#model = Word2Vec(documents, min_count=min_occurences)
 
 	#analyze the current subject's functions calls
 	documents = []
@@ -75,8 +76,9 @@ def main():
 		if seg in no_match_dict.keys():
 			no_match_dict.pop(seg, None)
 
-	model.save('local/'+args[1]+'_corpus_'+str(min_occurences)+'.model')
-	sys.stdout = open(args[0] + '_results_' + args[1] + '.txt', 'w')
+	#model.save('local/'+args[1]+'_corpus_'+str(min_occurences)+'.model')
+	thresh = int(threshold * 100)
+	sys.stdout = open(args[0] + '_results_' + args[1] + '_' + str(thresh)+'_'+str(min_occurences) + '_' + str(num_similarities)+'.txt', 'w')
 	print(sys.argv)
 	print(matches)
 	print(no_matches)
