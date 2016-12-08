@@ -48,7 +48,7 @@ def main():
 	#model_doc is corpus of C/C++ projects' functions
 	#query_doc is current project to analyze
 	model_doc = open('./docs/documents.txt', 'r')
-	query_doc = open(args[0] + '.txt','r')
+	query_doc = open('./docs/' + args[0] + '.txt','r')
    
 	documents = []
 	for line in model_doc:
@@ -78,7 +78,7 @@ def main():
 
 	#model.save('local/'+args[1]+'_corpus_'+str(min_occurences)+'.model')
 	thresh = int(threshold * 100)
-	sys.stdout = open(args[0] + '_results_' + args[1] + '_' + str(thresh)+'_'+str(min_occurences) + '_' + str(num_similarities)+'.txt', 'w')
+	sys.stdout = open('results/' + args[0] + '_results_' + args[1] + '_' + str(thresh)+'_'+str(min_occurences) + '_' + str(num_similarities)+'.txt', 'w')
 	print(sys.argv)
 	print(matches)
 	print(no_matches)
@@ -86,6 +86,10 @@ def main():
 	print(len(no_match_dict))
 	print(len(key_error_list))
 	print(no_matches - len(no_match_dict))
+
+	sys.stdout = open('global_results.txt','a')
+	print(args[0]+' '+args[1]+' '+str(threshold)+' '+str(min_occurences)+' '+str(num_similarities)+' '+str(matches)+' '+str(no_matches)+' '+str(len(no_match_dict))+' '+str(len(key_error_list)))
+	
 
 #collect data about missing functions with close distance to
 #other present functions
