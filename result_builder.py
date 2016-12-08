@@ -2,7 +2,7 @@ import os
 
 def main():
 	files = ['linux_docs', 'git_docs', 'sqlite_docs']
-	corpusii = ['code']
+	corpusii = ['wiki']
 	thresholds = [.1, .5, .6, .7, .8, .9, .95, .99]
 	min_occurences = [1,5,10,25,50,100,250,500,1000]
 	num_similarities = [1,5,10,25,50,100,250,500,1000]
