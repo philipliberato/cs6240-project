@@ -1,6 +1,0 @@
-vfprintf
-printf
-perror
-sprintf
-strlen
-main
