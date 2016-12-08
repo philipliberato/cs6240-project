@@ -7,8 +7,11 @@ Legion Parallel Programming System (Stanford)
 Github Linguist Library
 KDE applications tutorial library and editor
 Redis
+7-Zip
+PHP Interpreter
 Emscripten: LLVVM-to-JS compiler
 Epic Survival Game Series Unreal Engine 4 tutorial
+GamePlay engine
 FreeBSD
 FileZilla
 OpenCV
@@ -16,11 +19,16 @@ TensorFlow
 WinDirStat
 Boost Library
 GCC
+Clang
 CCV
 Codeblocks
 Inkscape
 Mona OS
 VLC Player
+Caffe
+Disk Cleaner
+C++ Library for Windows
+VTK
 lots of pthread/os projects from Github
 
 
