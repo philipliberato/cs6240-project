@@ -13,12 +13,12 @@ After this, you will have a documents.txt file containing all of the function ca
 
 Now it is time to use the gemini.py script to analyze the documents.txt file
 Gemini.py takes in a few cmd line arguments.  They are:
-  1) 'filename' where filename is the name of the file containing the documents for your program (do not include '.txt')
+ - 'filename' where filename is the name of the file containing the documents for your program (do not include '.txt')
       --additionally, Gemini expects this to file to be located in the docs folder
-  2) 'wiki'/'code'/'both' which is meant to analyze what model to load (only code model is functional at the moment)
-  3) threshold (from 0 to 1)
-  4) number of min occurences desired (note this helps Gemini know which model to load.  e.g. model "code_corpus_25.model" is        the model trained using 25 as its min occurences level
-  5) number of similarities (used for querying model)
+ - 'wiki'/'code'/'both' which is meant to analyze what model to load (only code model is functional at the moment)
+ - threshold (from 0 to 1)
+ - number of min occurences desired (note this helps Gemini know which model to load.  e.g. model "code_corpus_25.model" is        the model trained using 25 as its min occurences level
+ - number of similarities (used for querying model)
 
 - [Project Proposal](https://docs.google.com/document/d/1ggJiaL3gdO8rZxeZbgVWhGYrrS6GGHh7yDA4107d3Ro/edit)
 - [Project Progress](https://docs.google.com/document/d/1kT5qNgq6uY77Gc5A8uavghyJn15jyCUctbhLtkaiXQw/edit)
