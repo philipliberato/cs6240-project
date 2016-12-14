@@ -2,7 +2,8 @@
 CS 6240: Software Engineering Semester Project
 
 Pre-requisites:
-  You must first install Clang/LLVM and Graphviz (all needed to generate the documents)
+  You must first apt-get install Clang/LLVM and Graphviz (all needed to generate the documents)
+  Additionally gensim must be installed via pip ("pip install gensim")
   
 Run the create_dot_files.sh script, which seeks out all .c and .cpp files, gets their call graphs,
   and pipes this output into the document_builder.py script
@@ -22,7 +23,7 @@ Gemini.py takes in a few cmd line arguments.  They are:
  
 Once run, Gemini will print out a lot of information, such as cmd line inputs, number of matches, number of non-matches, the dictionary of no-match functions, the size of that dictionary, and the size of the "no key" dictionary (function names not in the model).  This can all be saved to a file if desired.  Note, this is what we have done for Git/Linux/SQLite at several different parameter settings.  These can all be found in the results folder, and the labeling convention is as follows:
 
-- 'filename'_results_'code/wiki/both'_'threshhold'_'minoccurrences'_'numsimilarities'.txt
+- e.g. "git_docs_results_code_10_1000_5.txt" is the output from the git_docs.txt documents file using the code model, with a threshold of .1 (which is multiplied by 100 for clarity in filename), number of min occurrences of 1000, and number of similarities of 5.
 
 - [Project Proposal](https://docs.google.com/document/d/1ggJiaL3gdO8rZxeZbgVWhGYrrS6GGHh7yDA4107d3Ro/edit)
 - [Project Progress](https://docs.google.com/document/d/1kT5qNgq6uY77Gc5A8uavghyJn15jyCUctbhLtkaiXQw/edit)
