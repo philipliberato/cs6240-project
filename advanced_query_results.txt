@@ -1,0 +1,1340 @@
+Loading model with min_occ 1
+	['fopen', 'close', 'open']
+[('remove', 0.9972708225250244),
+ ('ferror', 0.9959033131599426),
+ ('write', 0.9921175837516785),
+ ('ccv_icf_write_multiscale_classifier_cascade', 0.9910028576850891),
+ ('_ZN10Bool_ArrayC2Ej', 0.9905579090118408),
+ ('read', 0.9902399778366089),
+ ('fwrite', 0.990125298500061),
+ ('inflateInit_', 0.9886216521263123),
+ ('errfile', 0.9874250292778015),
+ ('deflateEnd', 0.9869611859321594)]
+
+
+	['fclose', 'open', 'close']
+[('fwrite', 0.9902510643005371),
+ ('fflush', 0.9871794581413269),
+ ('fopen', 0.9861454367637634),
+ ('fread', 0.9859282970428467),
+ ('_ZN6Hunzip4failEPKcS1_', 0.9850758910179138),
+ ('ttyname_r', 0.984427809715271),
+ ('setenv', 0.9838762283325195),
+ ('ferror', 0.9831677675247192),
+ ('strtol', 0.9820263981819153),
+ ('flockfile', 0.9811722636222839)]
+
+
+	['fread', 'write', 'read']
+[('fclose', 0.9980003833770752),
+ ('fwrite', 0.9959020614624023),
+ ('ferror', 0.9941236972808838),
+ ('remove', 0.9921770691871643),
+ ('flockfile', 0.9913105964660645),
+ ('fopen', 0.9896146059036255),
+ ('setenv', 0.988432765007019),
+ ('fflush', 0.9880937933921814),
+ ('errfile', 0.9878305196762085),
+ ('fseek', 0.987748384475708)]
+
+
+	['fwrite', 'read', 'write']
+[('fread', 0.9960980415344238),
+ ('ftell', 0.9927549362182617),
+ ('fclose', 0.991747260093689),
+ ('fseek', 0.9909994602203369),
+ ('flockfile', 0.9907751083374023),
+ ('errfile', 0.9905439615249634),
+ ('_ZN8Gen_Perf12affects_prevEcP9List_Node', 0.9892585277557373),
+ ('_ZN8Gen_Perf22compute_disjoint_unionEPKciS1_iPc', 0.9887263178825378),
+ ('_ZN8Gen_Perf8sort_setEPci', 0.9882230162620544),
+ ('cannot', 0.9877788424491882)]
+
+
+	['malloc', 'free', 'calloc']
+[('ccv_convnet_compact', 0.9833657741546631),
+ ('AddFrame', 0.9820043444633484),
+ ('int_clamp', 0.9782131910324097),
+ ('ccv_convnet_supervised_train', 0.9741097688674927),
+ ('freeReplyObject', 0.9735985398292542),
+ ('BZ2_bzWrite', 0.9722001552581787),
+ ('_book_maptype1_quantvals', 0.9702883958816528),
+ ('StoreFrame', 0.9699533581733704),
+ ('unget_lib', 0.9682815670967102),
+ ('_ZN10TextParser7get_urlEiPi', 0.9678974747657776)]
+
+
+	['close', 'calloc', 'free']
+[('fork', 0.9905833601951599),
+ ('setsid', 0.9889423847198486),
+ ('send', 0.988938570022583),
+ ('gzseek', 0.988039493560791),
+ ('kill', 0.9868811368942261),
+ ('write', 0.985804557800293),
+ ('recv', 0.9851346015930176),
+ ('deflate', 0.9850106835365295),
+ ('bind', 0.9848862290382385),
+ ('zError', 0.9846627712249756)]
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+[('pthread_join', 0.9932997226715088),
+ ('sleep', 0.9920744895935059),
+ ('pthread_cancel', 0.9917173385620117),
+ ('thread_routine', 0.9900450706481934),
+ ('pthread_cond_signal', 0.9889270663261414),
+ ('sem_init', 0.9884451627731323),
+ ('alarm_thread', 0.9876977205276489),
+ ('pthread_cond_init', 0.9871528148651123),
+ ('pthread_detach', 0.9869427680969238),
+ ('strerror', 0.9869290590286255)]
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+[('pthread_cancel', 0.9967473149299622),
+ ('sem_init', 0.9962414503097534),
+ ('sleep', 0.9945048093795776),
+ ('pthread_create', 0.9933098554611206),
+ ('strerror', 0.9876816272735596),
+ ('__errno_location', 0.9867134690284729),
+ ('thread_routine', 0.9820525050163269),
+ ('pthread_cond_init', 0.9810997247695923),
+ ('thd_suspend', 0.9796988368034363),
+ ('pthread_attr_setinheritsched', 0.9795283079147339)]
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+[('sem_init', 0.9954774379730225),
+ ('pthread_create', 0.9948383569717407),
+ ('pthread_cancel', 0.9922953248023987),
+ ('pthread_join', 0.9917339086532593),
+ ('pthread_detach', 0.9912625551223755),
+ ('__errno_location', 0.9902957677841187),
+ ('time', 0.988136887550354),
+ ('pthread_attr_init', 0.987492561340332),
+ ('pthread_cond_init', 0.9868439435958862),
+ ('thread_routine', 0.9865413308143616)]
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+[('pthread_cond_init', 0.9962488412857056),
+ ('pthread_cond_wait', 0.9950976371765137),
+ ('sleep', 0.994735836982727),
+ ('pthread_cond_signal', 0.9943913221359253),
+ ('pthread_attr_init', 0.9943528771400452),
+ ('thread_routine', 0.9930493235588074),
+ ('pthread_mutex_init', 0.9924664497375488),
+ ('pthread_mutex_unlock', 0.9916878938674927),
+ ('pthread_attr_setdetachstate', 0.9911655783653259),
+ ('__pthread_unregister_cancel', 0.9911500215530396)]
+
+
+	['calloc', 'memcpy', 'malloc']
+[('longdouble_d_f1', 0.9944237470626831),
+ ('_ZN8gameplay14fprintfElementEP8_IO_FILEPKcf', 0.9939298033714294),
+ ('sqlite3BitvecDestroy', 0.9938822984695435),
+ ('rgndata_swap', 0.9936953783035278),
+ ('_Z13ralloc_strcatPPcPKc', 0.9936668872833252),
+ ('sqlite3_mutex_alloc', 0.9935474395751953),
+ ('foo15049', 0.993526816368103),
+ ('foo10537', 0.9932588338851929),
+ ('new_localvarliteral_', 0.9932445287704468),
+ ('VP8DefaultProbas', 0.9932277202606201)]
+
+
+	['fwrite', 'fgets', 'fputs']
+[('gzread', 0.9931498765945435),
+ ('strtol', 0.992694616317749),
+ ('error', 0.9888098239898682),
+ ('fclose', 0.9884211421012878),
+ ('getFileCrc', 0.9869480729103088),
+ ('strtod', 0.9863322973251343),
+ ('fread', 0.9858918786048889),
+ ('__isoc99_scanf', 0.9857298135757446),
+ ('gzclose', 0.985645055770874),
+ ('strncpy', 0.9855535626411438)]
+
+
+	['fclose', 'fputs', 'fgets']
+[('ferror', 0.9933487176895142),
+ ('remove', 0.9910175800323486),
+ ('flockfile', 0.9895274639129639),
+ ('fwrite', 0.9883379936218262),
+ ('fseek', 0.9852144122123718),
+ ('fread', 0.985175609588623),
+ ('fflush', 0.9829069375991821),
+ ('errfile', 0.9819480180740356),
+ ('pthread_once', 0.9815616607666016),
+ ('worker_routine', 0.9794841408729553)]
+
+
+	['puts', 'fgets', 'fputs']
+[('llvm.memcpy.p0i8.p0i8.i64', 0.9719463586807251),
+ ('llvm.memset.p0i8.i64', 0.9623817801475525),
+ ('main', 0.9483036994934082),
+ ('__sync_nand_and_fetch', 0.9425568580627441),
+ ('llvm.stackrestore', 0.9424598217010498),
+ ('struct_by_value_5b_x', 0.9402548670768738),
+ ('scalar_return_3_x', 0.9393967390060425),
+ ('AnalyzeEntropy', 0.9391663670539856),
+ ('setup', 0.9371089935302734),
+ ('struct_return_21_x', 0.9349609017372131)]
+
+
+	['stat', 'fputs', 'fgets']
+[('tcsetattr', 0.9847556352615356),
+ ('generate_random', 0.9798625111579895),
+ ('open', 0.9793258905410767),
+ ('dsfmt_chk_init_by_array', 0.9768284559249878),
+ ('pthread_key_create', 0.9750996828079224),
+ ('fopen', 0.972021222114563),
+ ('pthread_getschedparam', 0.9704246520996094),
+ ('fb_close', 0.9702779054641724),
+ ('ferror', 0.9696217775344849),
+ ('__errno_location', 0.969413697719574)]
+
+
+	['printf', 'sscanf', 'sprintf']
+[('dcgettext', 0.9161140322685242),
+ ('dgettext', 0.9002436399459839),
+ ('f9', 0.8545904159545898),
+ ('f10', 0.8478261232376099),
+ ('f8', 0.8326151371002197),
+ ('f11', 0.8238815665245056),
+ ('gettext', 0.8190340995788574),
+ ('checkScdc', 0.8042579889297485),
+ ('checkSi', 0.8011213541030884),
+ ('f7', 0.8007417321205139)]
+
+
+	['send', 'wait', 'signal']
+[('strrchr', 0.9893468618392944),
+ ('fputs', 0.988280177116394),
+ ('check_exist_file', 0.9871386289596558),
+ ('generate_random', 0.9858043193817139),
+ ('vfprintf', 0.9857451915740967),
+ ('fopen', 0.9855053424835205),
+ ('fgets', 0.9845559000968933),
+ ('__isoc99_sscanf', 0.983076274394989),
+ ('_Z17trackingDirectoryPKcPi', 0.9804644584655762),
+ ('combine', 0.9798640012741089)]
+
+
+Loading model with min_occ 5
+	['fopen', 'close', 'open']
+[('inflateInit_', 0.9807478189468384),
+ ('inflate', 0.979721188545227),
+ ('__isoc99_sscanf', 0.9791349768638611),
+ ('fputs', 0.9789649248123169),
+ ('inflateEnd', 0.9776548147201538),
+ ('fclose', 0.9768894910812378),
+ ('gzerror', 0.9767776131629944),
+ ('gzopen', 0.9750349521636963),
+ ('generate_random', 0.974993109703064),
+ ('deflate', 0.9748545289039612)]
+
+
+	['fclose', 'open', 'close']
+[('fread', 0.9928732514381409),
+ ('fwrite', 0.9898215532302856),
+ ('feof', 0.9891254901885986),
+ ('write', 0.9855327010154724),
+ ('fflush', 0.9848223924636841),
+ ('fseek', 0.9825306534767151),
+ ('ferror', 0.9770760536193848),
+ ('read', 0.9761487245559692),
+ ('fopen', 0.9757447242736816),
+ ('ftell', 0.9728626012802124)]
+
+
+	['fread', 'write', 'read']
+[('fclose', 0.991814374923706),
+ ('fwrite', 0.9858071804046631),
+ ('fseek', 0.9839386940002441),
+ ('ferror', 0.9831439256668091),
+ ('feof', 0.9830137491226196),
+ ('fflush', 0.9827055335044861),
+ ('close', 0.9818850755691528),
+ ('open', 0.9773327112197876),
+ ('fopen', 0.9759701490402222),
+ ('ftell', 0.9718184471130371)]
+
+
+	['fwrite', 'read', 'write']
+[('lseek', 0.9921252727508545),
+ ('fread', 0.9857317209243774),
+ ('bye', 0.9852257966995239),
+ ('dup2', 0.9842497110366821),
+ ('ftell', 0.9829525947570801),
+ ('strtod', 0.9821609258651733),
+ ('fseek', 0.9820501804351807),
+ ('_IO_getc', 0.9813481569290161),
+ ('ioctl', 0.9803794622421265),
+ ('_ZN6Hunzip4failEPKcS1_', 0.9799475073814392)]
+
+
+	['malloc', 'free', 'calloc']
+[('AddFrame', 0.9365066289901733),
+ ('mem_init', 0.9314343929290771),
+ ('realloc', 0.9270894527435303),
+ ('ccv_array_zero', 0.9190709590911865),
+ ('StoreFrame', 0.9170371294021606),
+ ('gz_open', 0.9145528078079224),
+ ('gz_error', 0.9092586040496826),
+ ('tcd_create', 0.9022418856620789),
+ ('BZ2_bzWrite', 0.9018591046333313),
+ ('qsort', 0.9018380641937256)]
+
+
+	['close', 'calloc', 'free']
+[('fstat', 0.9807872772216797),
+ ('gzerror', 0.9764097929000854),
+ ('perror', 0.9754669070243835),
+ ('__isoc99_sscanf', 0.9745292663574219),
+ ('send', 0.9731315970420837),
+ ('error', 0.971977710723877),
+ ('gzopen', 0.9719321727752686),
+ ('strdup', 0.9692761898040771),
+ ('inflateInit_', 0.9688333868980408),
+ ('atoi', 0.9672452211380005)]
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+[('strerror', 0.9922472834587097),
+ ('sleep', 0.9909428358078003),
+ ('thread_routine', 0.9867582321166992),
+ ('pthread_join', 0.9862542748451233),
+ ('pthread_mutex_trylock', 0.9831737875938416),
+ ('sched_yield', 0.9822994470596313),
+ ('pthread_cancel', 0.9688652753829956),
+ ('pthread_cond_init', 0.96783447265625),
+ ('sem_init', 0.9658935070037842),
+ ('pthread_attr_setdetachstate', 0.9643864035606384)]
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+[('thread_routine', 0.9881460070610046),
+ ('pthread_create', 0.9866253137588501),
+ ('sleep', 0.9842818379402161),
+ ('rwl_destroy', 0.9795287251472473),
+ ('pthread_mutex_trylock', 0.979058027267456),
+ ('time', 0.9765095710754395),
+ ('sem_init', 0.9761253595352173),
+ ('pthread_attr_setdetachstate', 0.9731771349906921),
+ ('pthread_attr_init', 0.971738338470459),
+ ('pthread_cancel', 0.9709866642951965)]
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+[('thread_routine', 0.996321439743042),
+ ('pthread_join', 0.993844747543335),
+ ('pthread_create', 0.9931173920631409),
+ ('pthread_mutex_trylock', 0.9818166494369507),
+ ('sem_init', 0.9816698431968689),
+ ('pthread_cancel', 0.981666624546051),
+ ('strerror', 0.9815964698791504),
+ ('rwl_destroy', 0.9804607033729553),
+ ('pthread_attr_setdetachstate', 0.9787668585777283),
+ ('time', 0.9774699211120605)]
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+[('pthread_cond_signal', 0.996227502822876),
+ ('pthread_cond_wait', 0.995296835899353),
+ ('pthread_cond_init', 0.9912976026535034),
+ ('pthread_cond_broadcast', 0.9905046224594116),
+ ('sem_waiter', 0.9895340204238892),
+ ('pthread_once', 0.9886307716369629),
+ ('_ZN4TestC2Ev', 0.986803412437439),
+ ('pthread_mutex_init', 0.9858713150024414),
+ ('sem_wait', 0.9854730367660522),
+ ('pathconf', 0.9845303297042847)]
+
+
+	['calloc', 'memcpy', 'malloc']
+[('strcpy', 0.9508628845214844),
+ ('strnlen', 0.9470721483230591),
+ ('GetBuffer', 0.9464612603187561),
+ ('llvm.memmove.p0i8.p0i8.i64', 0.9421166181564331),
+ ('strcat', 0.9418013095855713),
+ ('memcmp', 0.9351670742034912),
+ ('memchr', 0.9259434938430786),
+ ('strlen', 0.9254189133644104),
+ ('strncmp', 0.9155856370925903),
+ ('strncpy', 0.9154815673828125)]
+
+
+	['fwrite', 'fgets', 'fputs']
+[('fread', 0.9942983388900757),
+ ('fflush', 0.9924042820930481),
+ ('fclose', 0.9899475574493408),
+ ('write', 0.9870840311050415),
+ ('fopen', 0.984001636505127),
+ ('ferror', 0.9835148453712463),
+ ('fseek', 0.983289361000061),
+ ('close', 0.9831492900848389),
+ ('open', 0.9814901947975159),
+ ('read', 0.9810330867767334)]
+
+
+	['fclose', 'fputs', 'fgets']
+[('fseek', 0.993091344833374),
+ ('ftell', 0.9915220737457275),
+ ('ferror', 0.9902073740959167),
+ ('fwrite', 0.990182638168335),
+ ('fread', 0.988877534866333),
+ ('write', 0.9799774885177612),
+ ('remove', 0.9792646169662476),
+ ('deflateEnd', 0.9791244268417358),
+ ('fflush', 0.9783042073249817),
+ ('read', 0.9782983064651489)]
+
+
+	['puts', 'fgets', 'fputs']
+[('sigaltstack', 0.9529178738594055),
+ ('zError', 0.9225471019744873),
+ ('setup', 0.913799524307251),
+ ('cleanup', 0.9135250449180603),
+ ('strtol', 0.9019816517829895),
+ ('exit', 0.9010185599327087),
+ ('fstat', 0.896744966506958),
+ ('stat', 0.8923625946044922),
+ ('fork', 0.886738121509552),
+ ('sigalrm_handler', 0.8822885751724243)]
+
+
+	['stat', 'fputs', 'fgets']
+[('unlink', 0.9902892112731934),
+ ('pthread_setspecific', 0.9794872999191284),
+ ('open', 0.9743843078613281),
+ ('mkdir', 0.972288966178894),
+ ('access', 0.9722723364830017),
+ ('tcsetattr', 0.9713618755340576),
+ ('rmdir', 0.9646490812301636),
+ ('write', 0.961702823638916),
+ ('rename', 0.9603425860404968),
+ ('read', 0.9603198766708374)]
+
+
+	['printf', 'sscanf', 'sprintf']
+[('dgettext', 0.882249116897583),
+ ('gettext', 0.8576008677482605),
+ ('dcgettext', 0.8401167392730713),
+ ('scanf', 0.7911109924316406),
+ ('vsscanf', 0.7830396294593811),
+ ('vscanf', 0.7662940621376038),
+ ('checkSi9', 0.7537958025932312),
+ ('checkull', 0.7401717901229858),
+ ('checkScsdis', 0.7392551898956299),
+ ('vfscanf', 0.7326239347457886)]
+
+
+	['send', 'wait', 'signal']
+[('localtime', 0.9916841983795166),
+ ('system', 0.9900609850883484),
+ ('getc', 0.982413649559021),
+ ('ungetc', 0.9818602800369263),
+ ('_Z5mkdirPKc', 0.9802947044372559),
+ ('file_uncompress', 0.9800840616226196),
+ ('errfile', 0.9784226417541504),
+ ('_ZN7DictMgr8mystrsepEPPcc', 0.9768651723861694),
+ ('strrchr', 0.9760820865631104),
+ ('_ZN7DictMgr8mystrdupEPKc', 0.9746754765510559)]
+
+
+Loading model with min_occ 10
+	['fopen', 'close', 'open']
+[('inflateInit_', 0.9837082624435425),
+ ('gzerror', 0.9806517362594604),
+ ('fclose', 0.9790067076683044),
+ ('generate_random', 0.9782538414001465),
+ ('gzseek', 0.9768815636634827),
+ ('inflateEnd', 0.9766033887863159),
+ ('inflate', 0.976369321346283),
+ ('deflateInit_', 0.975183367729187),
+ ('fputs', 0.9741411805152893),
+ ('fread', 0.974048376083374)]
+
+
+	['fclose', 'open', 'close']
+[('fwrite', 0.9908604621887207),
+ ('feof', 0.9884786605834961),
+ ('fopen64', 0.9847902059555054),
+ ('fread', 0.9843196868896484),
+ ('fflush', 0.9812670350074768),
+ ('fgets', 0.9805231690406799),
+ ('fopen', 0.9779163599014282),
+ ('fseek', 0.9744572639465332),
+ ('ferror', 0.9740796089172363),
+ ('generate_random', 0.9739794731140137)]
+
+
+	['fread', 'write', 'read']
+[('ferror', 0.9946478605270386),
+ ('fclose', 0.9942813515663147),
+ ('feof', 0.9912757277488708),
+ ('ftell', 0.9894654750823975),
+ ('fseek', 0.9875756502151489),
+ ('_Znam', 0.9842473268508911),
+ ('fwrite', 0.9837000370025635),
+ ('fflush', 0.9822760820388794),
+ ('_IO_getc', 0.9813979864120483),
+ ('fopen', 0.9804590940475464)]
+
+
+	['fwrite', 'read', 'write']
+[('fopen64', 0.9888887405395508),
+ ('fclose', 0.9862326383590698),
+ ('fread', 0.9838966131210327),
+ ('fputs', 0.9819477796554565),
+ ('fopen', 0.9818093776702881),
+ ('strdup', 0.9784712791442871),
+ ('__isoc99_sscanf', 0.9764404296875),
+ ('feof', 0.9756723046302795),
+ ('access', 0.9752827882766724),
+ ('recv', 0.975067138671875)]
+
+
+	['malloc', 'free', 'calloc']
+[('unzOpenCurrentFile3', 0.9275308847427368),
+ ('gz_open', 0.9199906587600708),
+ ('mem_init', 0.9063441157341003),
+ ('__isoc99_fscanf', 0.9053671360015869),
+ ('realloc', 0.9037121534347534),
+ ('zip64local_putValue_inmemory', 0.8941401243209839),
+ ('inflateInit2_', 0.8747116327285767),
+ ('_nl_explode_name', 0.8741517066955566),
+ ('WebPSafeMalloc', 0.8728007674217224),
+ ('unzCloseCurrentFile', 0.8719255924224854)]
+
+
+	['close', 'calloc', 'free']
+[('perror', 0.9742726683616638),
+ ('fstat', 0.9742134213447571),
+ ('socket', 0.9737383127212524),
+ ('fork', 0.9690632820129395),
+ ('send', 0.9673055410385132),
+ ('recv', 0.9659345149993896),
+ ('kill', 0.9651910066604614),
+ ('error', 0.9639633893966675),
+ ('gzerror', 0.962433934211731),
+ ('atoi', 0.9620993137359619)]
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+[('pthread_join', 0.993310809135437),
+ ('strerror', 0.987440288066864),
+ ('sem_init', 0.9810958504676819),
+ ('sleep', 0.9810943603515625),
+ ('thread_routine', 0.9762839078903198),
+ ('pthread_cancel', 0.9724249243736267),
+ ('time', 0.9589333534240723),
+ ('pthread_mutex_init', 0.9579775333404541),
+ ('pthread_cond_signal', 0.9577165842056274),
+ ('pthread_cond_init', 0.9569855332374573)]
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+[('sleep', 0.9948488473892212),
+ ('pthread_create', 0.9933397769927979),
+ ('thread_routine', 0.9885542392730713),
+ ('strerror', 0.9798462390899658),
+ ('sem_init', 0.9793689250946045),
+ ('pthread_cancel', 0.9791345000267029),
+ ('pthread_cond_signal', 0.9768173694610596),
+ ('pthread_mutex_init', 0.975403368473053),
+ ('sched_yield', 0.9749298095703125),
+ ('pthread_cond_init', 0.9733784198760986)]
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+[('thread_routine', 0.9915605187416077),
+ ('pthread_join', 0.9894043803215027),
+ ('pthread_create', 0.9831517338752747),
+ ('sched_yield', 0.9786733388900757),
+ ('pthread_mutex_lock', 0.9779973030090332),
+ ('pthread_cancel', 0.9776791334152222),
+ ('pthread_mutex_init', 0.975121796131134),
+ ('_ZN7Options19get_max_keysig_sizeEv', 0.9745866656303406),
+ ('pthread_cond_init', 0.9745302200317383),
+ ('sem_init', 0.9709307551383972)]
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+[('pthread_cond_broadcast', 0.9845550060272217),
+ ('pthread_cond_wait', 0.9833497405052185),
+ ('pthread_cond_signal', 0.9829139709472656),
+ ('pthread_mutex_destroy', 0.9811922311782837),
+ ('pthread_cond_init', 0.9793493747711182),
+ ('pthread_mutex_unlock', 0.9742509126663208),
+ ('pthread_mutex_init', 0.9724804759025574),
+ ('pthread_attr_init', 0.9723479747772217),
+ ('gz_comp', 0.970805823802948),
+ ('pthread_once', 0.9689196348190308)]
+
+
+	['calloc', 'memcpy', 'malloc']
+[('is_hex_digit', 0.9737061262130737),
+ ('hex_digit_to_int', 0.9712721705436707),
+ ('sdsrange', 0.9644085764884949),
+ ('sqlite3_malloc', 0.9595925807952881),
+ ('toupper', 0.9590549468994141),
+ ('_ZN10TextParser11is_wordcharEPc', 0.9571285247802734),
+ ('getnum', 0.95330810546875),
+ ('gzdopen', 0.9519637823104858),
+ ('sds_len', 0.9515746831893921),
+ ('_ZN8PfxEntry6getKeyEv', 0.9510893821716309)]
+
+
+	['fwrite', 'fgets', 'fputs']
+[('fclose', 0.9767574071884155),
+ ('fflush', 0.976264238357544),
+ ('feof', 0.9762122631072998),
+ ('fopen64', 0.9733880758285522),
+ ('fopen', 0.9727937579154968),
+ ('fstat', 0.9726545810699463),
+ ('do_help', 0.9713956713676453),
+ ('__isoc99_sscanf', 0.9708579182624817),
+ ('open', 0.9704926013946533),
+ ('fread', 0.9678829312324524)]
+
+
+	['fclose', 'fputs', 'fgets']
+[('fread', 0.9900482892990112),
+ ('ftell', 0.9898382425308228),
+ ('remove', 0.9878133535385132),
+ ('fseek', 0.9871703386306763),
+ ('ferror', 0.9865131378173828),
+ ('freopen', 0.9846627712249756),
+ ('_IO_getc', 0.983626663684845),
+ ('_ZN6Hunzip4failEPKcS1_', 0.9819591641426086),
+ ('ungetc', 0.981452226638794),
+ ('fopen64', 0.9810397624969482)]
+
+
+	['puts', 'fgets', 'fputs']
+[('__isoc99_scanf', 0.8937410712242126),
+ ('atoi', 0.8811402320861816),
+ ('strcpy', 0.8791550993919373),
+ ('zlibVersion', 0.8751363754272461),
+ ('open', 0.8645367622375488),
+ ('waitpid', 0.8482265472412109),
+ ('llvm.memset.p0i8.i64', 0.8461600542068481),
+ ('putchar', 0.8448719382286072),
+ ('llvm.memmove.p0i8.p0i8.i64', 0.8432913422584534),
+ ('strcat', 0.8423734903335571)]
+
+
+	['stat', 'fputs', 'fgets']
+[('deflateEnd', 0.9794378876686096),
+ ('unlink', 0.9789239168167114),
+ ('ferror', 0.975135087966919),
+ ('inflate', 0.9669762849807739),
+ ('write', 0.9666925072669983),
+ ('rmdir', 0.9663586616516113),
+ ('inflateEnd', 0.9643956422805786),
+ ('_IO_getc', 0.9633444547653198),
+ ('read', 0.9622729420661926),
+ ('sleep', 0.9599761366844177)]
+
+
+	['printf', 'sscanf', 'sprintf']
+[('dgettext', 0.8990988731384277),
+ ('dcgettext', 0.8861505389213562),
+ ('scanf', 0.8493975400924683),
+ ('initScsdisc', 0.8473359942436218),
+ ('gettext', 0.8423364758491516),
+ ('initScssdssc', 0.839019775390625),
+ ('initSsds', 0.832476794719696),
+ ('vsscanf', 0.8194653391838074),
+ ('initSsdsc', 0.8177014589309692),
+ ('checkSf2', 0.8170673847198486)]
+
+
+	['send', 'wait', 'signal']
+	"word 'wait' not in vocabulary"
+
+
+Loading model with min_occ 25
+	['fopen', 'close', 'open']
+[('gzerror', 0.9752995371818542),
+ ('perror', 0.9650653004646301),
+ ('fclose', 0.9640839099884033),
+ ('fputs', 0.9597184658050537),
+ ('fork', 0.9591550230979919),
+ ('strtol', 0.9583140015602112),
+ ('strstr', 0.9576603770256042),
+ ('error', 0.9564357995986938),
+ ('recv', 0.9563124179840088),
+ ('fwrite', 0.9534250497817993)]
+
+
+	['fclose', 'open', 'close']
+[('ftell', 0.9831987023353577),
+ ('fread', 0.979154109954834),
+ ('feof', 0.974826455116272),
+ ('fwrite', 0.9746026992797852),
+ ('fseek', 0.9664987921714783),
+ ('fflush', 0.9647788405418396),
+ ('fopen', 0.9632851481437683),
+ ('ferror', 0.960082471370697),
+ ('remove', 0.9497510194778442),
+ ('access', 0.9391217231750488)]
+
+
+	['fread', 'write', 'read']
+[('ftell', 0.9914872050285339),
+ ('fclose', 0.9913471937179565),
+ ('fwrite', 0.9910014867782593),
+ ('fseek', 0.9846179485321045),
+ ('fopen', 0.9764835834503174),
+ ('ferror', 0.9762808084487915),
+ ('feof', 0.9658269882202148),
+ ('remove', 0.9604483246803284),
+ ('fputs', 0.9592727422714233),
+ ('fflush', 0.9574601054191589)]
+
+
+	['fwrite', 'read', 'write']
+[('fread', 0.991284191608429),
+ ('fclose', 0.9873425960540771),
+ ('ftell', 0.9867629408836365),
+ ('fseek', 0.9778396487236023),
+ ('ferror', 0.9693340063095093),
+ ('remove', 0.969127893447876),
+ ('fopen', 0.964111328125),
+ ('__isoc99_fscanf', 0.9637117981910706),
+ ('feof', 0.9603696465492249),
+ ('fputs', 0.9592803120613098)]
+
+
+	['malloc', 'free', 'calloc']
+[('__isoc99_fscanf', 0.9175238013267517),
+ ('realloc', 0.9082835912704468),
+ ('tek1_getnum_s7s', 0.9048073291778564),
+ ('gz_error', 0.8986276388168335),
+ ('cleanup', 0.8880685567855835),
+ ('inflateInit2_', 0.8727782964706421),
+ ('fflush', 0.8691267371177673),
+ ('__isoc99_sscanf', 0.8666142225265503),
+ ('strdup', 0.8638149499893188),
+ ('feof', 0.8612298965454102)]
+
+
+	['close', 'calloc', 'free']
+[('strdup', 0.952292799949646),
+ ('htons', 0.9428374171257019),
+ ('sigemptyset', 0.9426592588424683),
+ ('fatal', 0.9372754096984863),
+ ('getenv', 0.9339590668678284),
+ ('fputs', 0.926740288734436),
+ ('inflateEnd', 0.9257493615150452),
+ ('error', 0.9232215881347656),
+ ('deflateEnd', 0.9217671155929565),
+ ('deflateInit_', 0.9208552837371826)]
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+[('pthread_join', 0.9976065754890442),
+ ('thread_routine', 0.988658607006073),
+ ('pthread_cancel', 0.9883388876914978),
+ ('sleep', 0.9858112931251526),
+ ('strerror', 0.9831814765930176),
+ ('pthread_cond_init', 0.9772595763206482),
+ ('pthread_mutex_init', 0.9715949892997742),
+ ('time', 0.9706172943115234),
+ ('pthread_cond_wait', 0.9696289300918579),
+ ('pthread_cond_signal', 0.9670603275299072)]
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+[('pthread_create', 0.9975988864898682),
+ ('thread_routine', 0.9929459095001221),
+ ('sleep', 0.9913619756698608),
+ ('strerror', 0.9828189611434937),
+ ('pthread_cancel', 0.9782412648200989),
+ ('time', 0.9780120849609375),
+ ('pthread_cond_init', 0.9693008065223694),
+ ('pthread_mutex_init', 0.9689139127731323),
+ ('pthread_cond_signal', 0.9643433094024658),
+ ('pthread_cond_wait', 0.9552518725395203)]
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+[('thread_routine', 0.9850107431411743),
+ ('pthread_join', 0.9677956104278564),
+ ('pthread_create', 0.9673755764961243),
+ ('pthread_cancel', 0.964771032333374),
+ ('time', 0.956229567527771),
+ ('pthread_mutex_lock', 0.9541024565696716),
+ ('unlink', 0.9520343542098999),
+ ('pthread_cond_init', 0.9500904083251953),
+ ('pthread_mutex_init', 0.9496257305145264),
+ ('strerror', 0.9477753639221191)]
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+[('pthread_cond_signal', 0.9950865507125854),
+ ('pthread_cond_init', 0.9899500608444214),
+ ('pthread_mutex_unlock', 0.988422155380249),
+ ('pthread_cond_wait', 0.98785799741745),
+ ('pthread_mutex_init', 0.9853709936141968),
+ ('pthread_mutex_destroy', 0.9784663319587708),
+ ('pthread_cond_destroy', 0.9685273766517639),
+ ('sleep', 0.9623225927352905),
+ ('_ZN4TestC2Ev', 0.957406222820282),
+ ('pthread_exit', 0.9533016681671143)]
+
+
+	['calloc', 'memcpy', 'malloc']
+	"word 'memcpy' not in vocabulary"
+
+
+	['fwrite', 'fgets', 'fputs']
+[('fclose', 0.9843594431877136),
+ ('fopen', 0.9821174144744873),
+ ('fread', 0.9773353934288025),
+ ('ftell', 0.9743371605873108),
+ ('ferror', 0.9700023531913757),
+ ('fflush', 0.969743013381958),
+ ('fseek', 0.9620662331581116),
+ ('feof', 0.9598369002342224),
+ ('__isoc99_sscanf', 0.9562896490097046),
+ ('remove', 0.9550567865371704)]
+
+
+	['fclose', 'fputs', 'fgets']
+[('fwrite', 0.9861346483230591),
+ ('fread', 0.982651948928833),
+ ('ftell', 0.9796810150146484),
+ ('fseek', 0.970808207988739),
+ ('remove', 0.9614622592926025),
+ ('feof', 0.9567813873291016),
+ ('ferror', 0.9550805687904358),
+ ('__isoc99_fscanf', 0.9541773200035095),
+ ('fopen', 0.9492711424827576),
+ ('fflush', 0.9420604705810547)]
+
+
+	['puts', 'fgets', 'fputs']
+[('stat', 0.9398844838142395),
+ ('open', 0.9296424388885498),
+ ('fflush', 0.9194342494010925),
+ ('atoi', 0.9192102551460266),
+ ('__isoc99_sscanf', 0.9128047823905945),
+ ('access', 0.9125245809555054),
+ ('strtol', 0.9122137427330017),
+ ('strdup', 0.9118225574493408),
+ ('perror', 0.9118184447288513),
+ ('close', 0.906669020652771)]
+
+
+	['stat', 'fputs', 'fgets']
+[('unlink', 0.9806805849075317),
+ ('rmdir', 0.9648821353912354),
+ ('access', 0.9641199111938477),
+ ('mkdir', 0.9628305435180664),
+ ('open', 0.9619142413139343),
+ ('cleanup', 0.9605940580368042),
+ ('socket', 0.9567131400108337),
+ ('close', 0.9551588296890259),
+ ('remove', 0.9501506686210632),
+ ('fflush', 0.9464609622955322)]
+
+
+	['printf', 'sscanf', 'sprintf']
+[('dgettext', 0.8778266906738281),
+ ('dcgettext', 0.8619966506958008),
+ ('initSsdsc', 0.837073564529419),
+ ('gettext', 0.8361963033676147),
+ ('scanf', 0.8256205320358276),
+ ('testvaSsds', 0.8249303102493286),
+ ('checkSf6', 0.8248684406280518),
+ ('checkUsl', 0.8229653835296631),
+ ('testvaScsdis', 0.818390429019928),
+ ('initScsi', 0.8178548216819763)]
+
+
+	['send', 'wait', 'signal']
+	"word 'wait' not in vocabulary"
+
+
+Loading model with min_occ 50
+	['fopen', 'close', 'open']
+[('fclose', 0.9735561609268188),
+ ('fwrite', 0.968285322189331),
+ ('fflush', 0.9611840844154358),
+ ('fgets', 0.9573997259140015),
+ ('ferror', 0.9558694958686829),
+ ('fputs', 0.9532672762870789),
+ ('fread', 0.9471786022186279),
+ ('perror', 0.9388989806175232),
+ ('getenv', 0.9357205629348755),
+ ('error', 0.9308016300201416)]
+
+
+	['fclose', 'open', 'close']
+[('fopen', 0.9774904251098633),
+ ('fwrite', 0.9686355590820312),
+ ('fread', 0.965825080871582),
+ ('ferror', 0.9612339735031128),
+ ('fseek', 0.9591418504714966),
+ ('fputs', 0.9552911520004272),
+ ('fflush', 0.952664852142334),
+ ('_IO_getc', 0.9511839151382446),
+ ('_Znam', 0.9194619655609131),
+ ('fgets', 0.9191833734512329)]
+
+
+	['fread', 'write', 'read']
+	"word 'read' not in vocabulary"
+
+
+	['fwrite', 'read', 'write']
+	"word 'read' not in vocabulary"
+
+
+	['malloc', 'free', 'calloc']
+[('close', 0.8837524652481079),
+ ('__isoc99_fscanf', 0.8622294664382935),
+ ('gz_error', 0.8589004278182983),
+ ('tek1_getnum_s7s', 0.8583906292915344),
+ ('realloc', 0.8468340635299683),
+ ('strdup', 0.8459025621414185),
+ ('write', 0.8454459309577942),
+ ('gz_comp', 0.8409777879714966),
+ ('deflateEnd', 0.834051787853241),
+ ('open', 0.8335846662521362)]
+
+
+	['close', 'calloc', 'free']
+[('puts', 0.9044328331947327),
+ ('strdup', 0.9012109041213989),
+ ('realloc', 0.8929784297943115),
+ ('open', 0.877857506275177),
+ ('unlink', 0.8694502115249634),
+ ('sdslen', 0.8636655807495117),
+ ('snprintf', 0.8634079098701477),
+ ('llvm.memset.p0i8.i64', 0.860440731048584),
+ ('write', 0.8581345081329346),
+ ('strcpy', 0.8576847314834595)]
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+[('pthread_join', 0.9956738352775574),
+ ('strerror', 0.9758492708206177),
+ ('pthread_cond_wait', 0.9677533507347107),
+ ('sleep', 0.9622979760169983),
+ ('pthread_mutex_init', 0.9602490067481995),
+ ('pthread_cond_init', 0.950890302658081),
+ ('time', 0.9293191432952881),
+ ('syscall', 0.9154196381568909),
+ ('__syscall', 0.9008712768554688),
+ ('rand', 0.8855661749839783)]
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+[('pthread_create', 0.995497465133667),
+ ('sleep', 0.9839112758636475),
+ ('strerror', 0.9734923839569092),
+ ('pthread_cond_wait', 0.9637171626091003),
+ ('pthread_mutex_init', 0.9630480408668518),
+ ('pthread_cond_init', 0.9579964876174927),
+ ('time', 0.9526585340499878),
+ ('__errno_location', 0.8945863246917725),
+ ('syscall', 0.8865681886672974),
+ ('__syscall', 0.8848810791969299)]
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+	"word 'pthread_cond_signal' not in vocabulary"
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+	"word 'pthread_cancel' not in vocabulary"
+
+
+	['calloc', 'memcpy', 'malloc']
+	"word 'memcpy' not in vocabulary"
+
+
+	['fwrite', 'fgets', 'fputs']
+[('fclose', 0.9663274884223938),
+ ('fopen', 0.9571685194969177),
+ ('fflush', 0.9558287262916565),
+ ('ferror', 0.9368562698364258),
+ ('open', 0.9326374530792236),
+ ('perror', 0.932530403137207),
+ ('fread', 0.9285542368888855),
+ ('atoi', 0.9284998178482056),
+ ('strdup', 0.9182979464530945),
+ ('close', 0.9121910333633423)]
+
+
+	['fclose', 'fputs', 'fgets']
+[('fread', 0.9855550527572632),
+ ('fseek', 0.9853223562240601),
+ ('fwrite', 0.9691586494445801),
+ ('ferror', 0.9592699408531189),
+ ('_IO_getc', 0.9578750133514404),
+ ('fopen', 0.9520962238311768),
+ ('__isoc99_fscanf', 0.9236395359039307),
+ ('_Znam', 0.9106227159500122),
+ ('fflush', 0.906946063041687),
+ ('fgetc', 0.8919014930725098)]
+
+
+	['puts', 'fgets', 'fputs']
+[('stat', 0.9451420903205872),
+ ('open', 0.9307926297187805),
+ ('unlink', 0.9189739227294922),
+ ('close', 0.9140253067016602),
+ ('atoi', 0.911980390548706),
+ ('strdup', 0.8964592218399048),
+ ('__errno_location', 0.893413245677948),
+ ('time', 0.8906691670417786),
+ ('perror', 0.8845412731170654),
+ ('putchar', 0.8747440576553345)]
+
+
+	['stat', 'fputs', 'fgets']
+[('open', 0.9564153552055359),
+ ('ferror', 0.952150821685791),
+ ('unlink', 0.9517951607704163),
+ ('puts', 0.9402071833610535),
+ ('write', 0.932310938835144),
+ ('fflush', 0.9282097816467285),
+ ('_IO_getc', 0.9267979860305786),
+ ('strdup', 0.9255388975143433),
+ ('__isoc99_fscanf', 0.9206310510635376),
+ ('gettimeofday', 0.9151936769485474)]
+
+
+	['printf', 'sscanf', 'sprintf']
+	"word 'sscanf' not in vocabulary"
+
+
+	['send', 'wait', 'signal']
+	"word 'send' not in vocabulary"
+
+
+Loading model with min_occ 100
+	['fopen', 'close', 'open']
+	"word 'open' not in vocabulary"
+
+
+	['fclose', 'open', 'close']
+	"word 'open' not in vocabulary"
+
+
+	['fread', 'write', 'read']
+	"word 'write' not in vocabulary"
+
+
+	['fwrite', 'read', 'write']
+	"word 'read' not in vocabulary"
+
+
+	['malloc', 'free', 'calloc']
+[('realloc', 0.814339280128479),
+ ('atoi', 0.7885148525238037),
+ ('close', 0.7849039435386658),
+ ('gz_error', 0.7660748958587646),
+ ('pthread_mutex_lock', 0.7285822033882141),
+ ('snprintf', 0.7213228940963745),
+ ('pthread_mutex_unlock', 0.7040907740592957),
+ ('ccv_array_push', 0.7031586170196533),
+ ('pthread_create', 0.7022212147712708),
+ ('perror', 0.7021200656890869)]
+
+
+	['close', 'calloc', 'free']
+[('strcpy', 0.8243108987808228),
+ ('atoi', 0.8009799122810364),
+ ('llvm.memset.p0i8.i64', 0.7858809232711792),
+ ('realloc', 0.7835440635681152),
+ ('strchr', 0.7736361026763916),
+ ('gz_error', 0.7638241052627563),
+ ('llvm.memcpy.p0i8.p0i8.i64', 0.760154128074646),
+ ('llvm.va_start', 0.7528623938560486),
+ ('strcat', 0.751549243927002),
+ ('check', 0.7513421177864075)]
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+[('pthread_join', 0.9921509027481079),
+ ('strerror', 0.9609159231185913),
+ ('__errno_location', 0.9003508687019348),
+ ('rand', 0.847825288772583),
+ ('close', 0.810507595539093),
+ ('syscall', 0.8006325960159302),
+ ('__clang_call_terminate', 0.7811376452445984),
+ ('_ZSt9terminatev', 0.7692709565162659),
+ ('gz_error', 0.7656000852584839),
+ ('__cxa_begin_catch', 0.7564573287963867)]
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+[('pthread_create', 0.9922006726264954),
+ ('strerror', 0.9603952169418335),
+ ('__errno_location', 0.8906490802764893),
+ ('close', 0.852148711681366),
+ ('rand', 0.8122163414955139),
+ ('fprintf', 0.7991293668746948),
+ ('perror', 0.7761871814727783),
+ ('atoi', 0.7574613094329834),
+ ('gz_error', 0.7424068450927734),
+ ('syscall', 0.7403320074081421)]
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+	"word 'sleep' not in vocabulary"
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+	"word 'pthread_cancel' not in vocabulary"
+
+
+	['calloc', 'memcpy', 'malloc']
+	"word 'memcpy' not in vocabulary"
+
+
+	['fwrite', 'fgets', 'fputs']
+	"word 'fgets' not in vocabulary"
+
+
+	['fclose', 'fputs', 'fgets']
+	"word 'fputs' not in vocabulary"
+
+
+	['puts', 'fgets', 'fputs']
+	"word 'puts' not in vocabulary"
+
+
+	['stat', 'fputs', 'fgets']
+	"word 'stat' not in vocabulary"
+
+
+	['printf', 'sscanf', 'sprintf']
+	"word 'sscanf' not in vocabulary"
+
+
+	['send', 'wait', 'signal']
+	"word 'send' not in vocabulary"
+
+
+Loading model with min_occ 250
+	['fopen', 'close', 'open']
+	"word 'fopen' not in vocabulary"
+
+
+	['fclose', 'open', 'close']
+	"word 'open' not in vocabulary"
+
+
+	['fread', 'write', 'read']
+	"word 'fread' not in vocabulary"
+
+
+	['fwrite', 'read', 'write']
+	"word 'fwrite' not in vocabulary"
+
+
+	['malloc', 'free', 'calloc']
+[('U_PMF_SERIAL_set', 0.7495604753494263),
+ ('fclose', 0.7470899820327759),
+ ('snprintf', 0.6667674779891968),
+ ('_ZdlPv', 0.6501196622848511),
+ ('llvm.memset.p0i8.i64', 0.6452652215957642),
+ ('strlen', 0.6196949481964111),
+ ('x2', 0.6119158267974854),
+ ('_Z16InfoNES_SetupChrv', 0.6024481654167175),
+ ('U_PMF_SERIAL_get', 0.6003642678260803),
+ ('tcase_add_test', 0.5963690280914307)]
+
+
+	['close', 'calloc', 'free']
+	"word 'close' not in vocabulary"
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+	"word 'pthread_create' not in vocabulary"
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+	"word 'pthread_join' not in vocabulary"
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+	"word 'sleep' not in vocabulary"
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+	"word 'pthread_mutex_lock' not in vocabulary"
+
+
+	['calloc', 'memcpy', 'malloc']
+	"word 'memcpy' not in vocabulary"
+
+
+	['fwrite', 'fgets', 'fputs']
+	"word 'fwrite' not in vocabulary"
+
+
+	['fclose', 'fputs', 'fgets']
+	"word 'fputs' not in vocabulary"
+
+
+	['puts', 'fgets', 'fputs']
+	"word 'puts' not in vocabulary"
+
+
+	['stat', 'fputs', 'fgets']
+	"word 'stat' not in vocabulary"
+
+
+	['printf', 'sscanf', 'sprintf']
+	"word 'sscanf' not in vocabulary"
+
+
+	['send', 'wait', 'signal']
+	"word 'send' not in vocabulary"
+
+
+Loading model with min_occ 500
+	['fopen', 'close', 'open']
+	"word 'fopen' not in vocabulary"
+
+
+	['fclose', 'open', 'close']
+	"word 'fclose' not in vocabulary"
+
+
+	['fread', 'write', 'read']
+	"word 'fread' not in vocabulary"
+
+
+	['fwrite', 'read', 'write']
+	"word 'fwrite' not in vocabulary"
+
+
+	['malloc', 'free', 'calloc']
+	"word 'calloc' not in vocabulary"
+
+
+	['close', 'calloc', 'free']
+	"word 'close' not in vocabulary"
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+	"word 'pthread_create' not in vocabulary"
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+	"word 'pthread_join' not in vocabulary"
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+	"word 'sleep' not in vocabulary"
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+	"word 'pthread_mutex_lock' not in vocabulary"
+
+
+	['calloc', 'memcpy', 'malloc']
+	"word 'calloc' not in vocabulary"
+
+
+	['fwrite', 'fgets', 'fputs']
+	"word 'fwrite' not in vocabulary"
+
+
+	['fclose', 'fputs', 'fgets']
+	"word 'fclose' not in vocabulary"
+
+
+	['puts', 'fgets', 'fputs']
+	"word 'puts' not in vocabulary"
+
+
+	['stat', 'fputs', 'fgets']
+	"word 'stat' not in vocabulary"
+
+
+	['printf', 'sscanf', 'sprintf']
+	"word 'sscanf' not in vocabulary"
+
+
+	['send', 'wait', 'signal']
+	"word 'send' not in vocabulary"
+
+
+Loading model with min_occ 1000
+	['fopen', 'close', 'open']
+	"word 'fopen' not in vocabulary"
+
+
+	['fclose', 'open', 'close']
+	"word 'fclose' not in vocabulary"
+
+
+	['fread', 'write', 'read']
+	"word 'fread' not in vocabulary"
+
+
+	['fwrite', 'read', 'write']
+	"word 'fwrite' not in vocabulary"
+
+
+	['malloc', 'free', 'calloc']
+	"word 'calloc' not in vocabulary"
+
+
+	['close', 'calloc', 'free']
+	"word 'close' not in vocabulary"
+
+
+	['pthread_create', 'pthread_mutex_unlock', 'pthread_mutex_lock']
+	"word 'pthread_create' not in vocabulary"
+
+
+	['pthread_join', 'pthread_mutex_lock', 'pthread_mutex_unlock']
+	"word 'pthread_join' not in vocabulary"
+
+
+	['sleep', 'pthread_cond_signal', 'pthread_cond_wait']
+	"word 'sleep' not in vocabulary"
+
+
+	['pthread_mutex_lock', 'pthread_cancel', 'pthread_create']
+	"word 'pthread_mutex_lock' not in vocabulary"
+
+
+	['calloc', 'memcpy', 'malloc']
+	"word 'calloc' not in vocabulary"
+
+
+	['fwrite', 'fgets', 'fputs']
+	"word 'fwrite' not in vocabulary"
+
+
+	['fclose', 'fputs', 'fgets']
+	"word 'fclose' not in vocabulary"
+
+
+	['puts', 'fgets', 'fputs']
+	"word 'puts' not in vocabulary"
+
+
+	['stat', 'fputs', 'fgets']
+	"word 'stat' not in vocabulary"
+
+
+	['printf', 'sscanf', 'sprintf']
+	"word 'sscanf' not in vocabulary"
+
+
+	['send', 'wait', 'signal']
+	"word 'send' not in vocabulary"
+
