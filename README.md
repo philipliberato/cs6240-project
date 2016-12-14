@@ -17,8 +17,12 @@ Gemini.py takes in a few cmd line arguments.  They are:
       --additionally, Gemini expects this to file to be located in the docs folder
  - 'wiki'/'code'/'both' which is meant to analyze what model to load (only code model is functional at the moment)
  - threshold (from 0 to 1)
- - number of min occurences desired (note this helps Gemini know which model to load.  e.g. model "code_corpus_25.model" is        the model trained using 25 as its min occurences level
+ - number of min occurrences desired (note this helps Gemini know which model to load.  e.g. model "code_corpus_25.model" is        the model trained using 25 as its min occurrences level
  - number of similarities (used for querying model)
+ 
+Once run, Gemini will print out a lot of information, such as cmd line inputs, number of matches, number of non-matches, the dictionary of no-match functions, the size of that dictionary, and the size of the "no key" dictionary (function names not in the model).  This can all be saved to a file if desired.  Note, this is what we have done for Git/Linux/SQLite at several different parameter settings.  These can all be found in the results folder, and the labeling convention is as follows:
+
+- 'filename'_results_'code/wiki/both'_'threshhold'_'minoccurrences'_'numsimilarities'.txt
 
 - [Project Proposal](https://docs.google.com/document/d/1ggJiaL3gdO8rZxeZbgVWhGYrrS6GGHh7yDA4107d3Ro/edit)
 - [Project Progress](https://docs.google.com/document/d/1kT5qNgq6uY77Gc5A8uavghyJn15jyCUctbhLtkaiXQw/edit)
