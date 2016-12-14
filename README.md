@@ -9,8 +9,8 @@ Run the create_dot_files.sh script, which seeks out all .c and .cpp files, gets 
   and pipes this output into the document_builder.py script
   
 After this, you will have a documents.txt file containing all of the function call grouping in the format:
-  -::caller_function:: callee1 callee2 callee3
-  -::caller_function2:: foo bar 
+  - ::caller_function:: callee1 callee2 callee3
+  - ::caller_function2:: foo bar 
 
 Now it is time to use the gemini.py script to analyze the documents.txt file
 Gemini.py takes in a few cmd line arguments.  They are:
