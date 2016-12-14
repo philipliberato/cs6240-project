@@ -1,7 +1,0 @@
-['gemini.py', 'linux_docs', 'wiki', 10', 1']
-0
-0
-{}
-0
-1
-0
